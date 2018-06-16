@@ -1,0 +1,104 @@
+^Good Robot
+
+* * * 
+
+#Twenty Sided Games
+
+* * *
+
+#Programming and Game Design
+Shamus Young
+
+* * *
+
+#Writing
+Adam DeCamp
+Shamus Young
+
+* * *
+
+#Artwork
+Shamus Young
+
+* * *
+
+#Additional Linux Programming
+Peter Olson
+
+* * *
+
+#Score
+
+"Rock Robot"
+by Groboclown
+* *
+John Callaghan
+* *
+"Fawstoar1"
+by Foster Powell
+* *
+"Fawstoar2"
+by Foster Powell
+* *
+"Across the Universe"
+by Dmitriy Rodionov
+* *
+"Bad Robot"
+by John Callaghan
+* *
+"Breaking the Barriers"
+by Dmitriy Rodionov
+* *
+"Robotic Illusions"
+by Dmitriy Rodionov
+* *
+"Procession of the Winners"
+by Dmitriy Rodionov
+* *
+"Pursuit of Discovery"
+by Dmitriy Rodionov
+* *
+"Steady Climb"
+by Dmitriy Rodionov
+* *
+"Galactic Move"
+by Pavel Svejentsev
+* *
+"1000 Miles Per Hour"
+by Alex Grey
+* *
+"Space Harmony"
+by Geoff Harvey
+* *
+"Electro Motion"
+by Geoff Harvey
+* *
+
+* * *
+
+#Playtesters
+Jacob Viel
+Joshua Viel
+Chris Franklin
+Dylan Schouten
+Rachel Young
+Esther Young
+Peter Olson
+Clint Olson
+Felix Grant Silver
+
+* * *
+
+#Extended Warranty Overhaul Mod
+Richard Wiedenroth
+
+* * *
+
+#Special thanks to all the readers of 
+#Twenty Sided. Thanks for the advice, 
+#the encouragement, the donations, 
+#and for following the story of this 
+#project from inception to release.
+
+* * * * * * * * * * * * * * * * 
+* * * * * * * * * * * * * * * * 

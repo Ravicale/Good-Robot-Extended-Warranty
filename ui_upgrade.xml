@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade>
+  <bg align_x="1" align_y="1" x="0" y="0" w="1.1" h="0.825" img="6" />
+  <title x="0" y="-0.31" align_x="1" align_y="1" text="PyroCorp Upgrade Station" font="0" color="0" color_h="0" color_s="2" text_align_x="1" text_align_y="0" />
+
+  <quit x="0.5" y="-0.3" w="0.11" h="0.055" align_x="1" align_y="1" img_b="15" img_s="17" img_h="16">
+    <tooltip x="-0.001" y="-0.03" align_x="2" align_y="0" text="Back to Game" font="0" color="0" text_align_x="2" text_align_y="2" />
+    <hotkey input="7" />
+  </quit>
+
+  <!--Button image _b = normal, _h when money is increased, _s when money is decreased
+  Caption = money value, desc = the text "money"-->
+  <money x="0" y="-0.245" w="0.3" h="0.2" align_x="1" align_y="1" img_b="0" img_s="0" img_h="0" limit="3">
+    <caption x="0" y="0" align_x="1" align_y="1" text="$" font="3" color="0" color_s="2" color_h="0" text_align_x="1" text_align_y="1" />
+  </money>
+
+  <template_button x="-0.338" y="-0.133" w="0.326" h="0.148" align_x="1" align_y="1" img_b="18" img_s="20" img_h="19">
+    <caption x="0" y="-0.065"  align_x="1" align_y="1" text="" font="0" color="0" color_h="0" color_s="2" text_align_x="1" text_align_y="0" />
+
+    <buy x="0.043" y="0.048" w="0.23" h="0.057" align_x="1" align_y="1" img_b="10" img_s="12" img_h="11">
+      <caption x="0.062" y="-0.003" align_x="1" align_y="1" text="Buy" font="0" color="0" color_h="0" color_s="2" text_align_x="1" text_align_y="1" />
+
+      <!--The cost of the thing-->
+      <price x="-0.09" y="-0.003" align_x="1" align_y="1" text="Active" font="0" color="0" color_h="0" color_s="2" text_align_x="1" text_align_y="1" />
+    </buy>
+
+    <skill_points>
+      <inc x="0.02" y="0" />
+
+      <start x="0.05" y="-0.01" w="0.017" h="0.05" align_x="0" align_y="1" img_b="44" img_s="46" img_h="45">
+        <select img_b="41" img_s="43" img_h="42" />
+      </start>
+
+      <mid x="0.05" y="-0.01" w="0.017" h="0.05" align_x="0" align_y="1" img_b="50" img_s="52" img_h="51">
+        <select img_b="47" img_s="49" img_h="48" />
+      </mid>
+
+      <end x="0.05" y="-0.01" w="0.017" h="0.05" align_x="0" align_y="1" img_b="56" img_s="58" img_h="57">
+        <select img_b="53" img_s="55" img_h="54" />
+      </end>
+
+      <single x="0.002" y="-0.01" w="0.015" h="0.03" align_x="0" align_y="1" img_b="38" img_s="40" img_h="39">
+        <select img_b="35" img_s="37" img_h="36" />
+      </single>
+    </skill_points>
+  </template_button>
+
+  <!--The descriptions of the store items are drawn using this-->
+  <tooltip x="0" y="0.14" align_x="1" align_y="1" text="" font="0" color="0" text_align_x="1" text_align_y="1" />
+
+  <menu type="grid" rows="2" x="0.338" y="0.16" keyboard="true" />
+
+  <!--These have multiple levels of power and are always available in blue vending machine-->
+  <skills>
+    <attack_power   caption="Attack Power"   tooltip="Go on. Upgrade those weapons. You've earned it." />
+    <rate_of_fire   caption="Rate of Fire"   tooltip="Making you shoot faster is our passion." />
+    <movement_speed caption="Movement Speed" tooltip="Flying Speed. Quality. Innovation." />
+    <shield         caption="Shields"        tooltip="An investment in not getting blown up is an investment in the future." />
+    <vision_range   caption="Vision Radius"  tooltip="See others before they see you! And then shoot them." />
+  </skills>
+
+  <!--These are just on/off and only one of them is available in blue vending machine at a time-->
+  <upgrades owned_caption="All Utilities Owned" owned_tooltip="Fully Prepared!">
+    <target_laser   cost="1000"  caption="Cash Magnet"      tooltip="Sucks up nearby green. If you can't afford to buy it, you can't afford NOT to buy it." />
+    <enemy_scanner  cost="5000" caption="Enemy Scanner"    tooltip="You're right. There probably AREN'T enemies lurking in every shadow. Waste of money, huh?" />
+    <compass        cost="2500" caption="Compass"          tooltip="Finds the nearest exit. Perfect for movies, malls, apocalyptic tactical emergencies." />
+    <target_laser   cost="500"  caption="Targeting Laser" tooltip="Our latest innovation: a laser that DOESN'T blow things up. Directly." />
+  </upgrades>
+
+  <!--The current news item is drawn here-->
+  <news keyboard="true">
+    <text x ="0" y="0.266" align_x="1" align_y="1" color="0" font="0" text_align_x="1" text_align_y="1">
+      <line x ="0" y="0.03" align_x="0" align_y="0" width="70" />
+
+      <prev x="-0.47" y="0.27" w="0.065" h="0.11" align_x="1" align_y="1" img_b="74" img_s="76" img_h="75">
+        <hotkey input="5">
+          <dim align_x="0" align_y="2" x="0" y="0" w="0.05" h="0.05" />
+        </hotkey>
+      </prev>
+
+      <next x="0.47" y="0.27" w="0.065" h="0.11" align_x="1" align_y="1" img_b="71" img_s="73" img_h="72">
+        <hotkey input="6">
+          <dim align_x="2" align_y="2" x="0" y="0" w="0.05" h="0.05" />
+        </hotkey>
+      </next>
+    </text>
+
+    <options>
+      <o val="0" name="News Text #1" />
+      <o val="1" name="News Text #2" />
+      <o val="2" name="News Text #3" />
+    </options>
+
+    <caption x="0" y="0.205" align_x="1" align_y="1" text="Breaking News" font="0" color="0" text_align_x="1" text_align_y="1" />
+  </news>
+</upgrade>

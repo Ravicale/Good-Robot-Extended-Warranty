@@ -1,0 +1,1360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<levels>
+  <Level0>
+    <Properties Title="Prologue" Subtitle="Robot Factory" Music="GoodRobot-Factory Floor.OGG" ZonesMin="3" ZonesMax="3" />
+    <Textures
+      Foreground="tilesets/atlas_factory_fore.png"
+      Middle="tilesets/atlas_factory_back1.png"
+      Background="tilesets/atlas_factory_back2.png"
+      Sky="cave.png" />
+    <Motif0
+      Foreground="#397"
+      Middle="#566"
+      Background="#655"
+      Sky="#935"
+      Lamp="#397"
+      Light="#319"
+      Fog="0.8"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif1
+      Foreground="#56F"
+      Middle="#76B"
+      Background="#A68"
+      Sky="#D65"
+      Lamp="#56F"
+      Light="#D94"
+      Fog="0.4"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif2
+      Foreground="#39F"
+      Middle="#67B"
+      Background="#979"
+      Lamp="#39F"
+      Sky="#D66"
+      Light="#D86"
+      Fog="0.6"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif3
+      Foreground="#15D"
+      Middle="#549"
+      Background="#946"
+      Lamp="#15D"
+      Sky="#E43"
+      Light="#15D"
+      Fog="0.6"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif4
+      Foreground="#427"
+      Middle="#917"
+      Background="#C16"
+      Lamp="#227"
+      Sky="#F16"
+      Light="#11A"
+      Fog="0.6"
+        Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+
+<!--<Zone0 Rooms="2" Patterns="open_arena" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="Shooter1TutorialPrimary" Min="1" Max="1" Room="1" />
+      <Mob1 Robot="Shooter1TutorialSecondary" Min="1" Max="1" Room="1" />
+    </Zone0> -->
+<Zone0 Rooms="5" Patterns="open_tutorial" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="Shooter1TutorialPrimary" Min="1" Max="1" Room="1" />
+      <Mob1 Robot="Shooter1TutorialSecondary" Min="1" Max="1" Room="1" />
+      <Mob2 Robot="Shooter1" Min="8" Max="8" Room="2" />
+      <Mob3 Robot="Shooter3" Min="3" Max="3" Room="2" />
+      <Mob4 Robot="Shooter1" Min="6" Max="6" Room="3" />
+	  <Mob5 Robot="Shooter3" Min="3" Max="3" Room="3" />
+	  <Mob6 Robot="Shooter2" Min="3" Max="3" Room="3" />
+    </Zone0>
+    <Zone1 Rooms="4" Patterns="open_porus open_donut vert_shafts open_grid open_tunnel" Music="GoodRobot-Logic Circus.OGG" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="WallTurret1" Min="6" Max="10" />
+      <Mob1 Robot="Shooter1" Min="5" Max="7" />
+      <Mob2 Robot="Shooter1" Min="5" Max="7" Source="Machine" />
+      <Mob3 Robot="Shooter2" Min="3" Max="4" />
+      <Mob4 Robot="Shooter2" Min="3" Max="4" Source="Machine" />
+    </Zone1>
+    <Zone2 Rooms="3" Patterns="comp_ampule open_porus2 open_grid3 open_cavern" Music="GoodRobot-We Come in Pieces.OGG" Door="DoorRobots" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="WallTurret1" Min="5" Max="8" />
+      <Mob1 Robot="Shooter1" Min="9" Max="12" Source="Machine" />
+      <Mob2 Robot="Shooter1" Min="6" Max="9" />
+      <Mob3 Robot="Shooter3" Min="3" Max="6" />
+      <Mob4 Robot="Shooter3" Min="4" Max="8" Source="Machine" />
+    </Zone2>
+    <Zone3 Rooms="3" Patterns="tight_snake seg_rooms1 open_x open_tunnel2" Music="GoodRobot-Battery Low.OGG" Door="DoorDarkroom" EndMachine="Upgrade" Forcefield="none">
+      <Motif
+      Foreground="#802"
+      Middle="#402"
+      Background="#301"
+      Lamp="#A5F"
+      Sky="#301"
+      Light="#113"
+      Fog="0.4"
+      Blind="1"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+
+      <Mob0 Robot="WallTurret1" Min="6" Max="8" />
+      <Mob1 Robot="Shooter1" Min="9" Max="12" Source="Machine" />
+      <Mob2 Robot="Shooter3" Min="5" Max="7" Source="Machine" />
+    </Zone3>
+    <Zone4 Rooms="4" Patterns="seg_quadrant open_porus comp_zigzag tight_trident" Music="GoodRobot-Melting Point Blank.OGG" Door="DoorShop" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="ChestT1" Min="5" Max="7" />
+      <Mob1 Robot="ChestT1Trap" Min="2" Max="4" />
+      <Mob2 Robot="SpamShooter1" Min="4" Max="6" />
+      <Mob3 Robot="Shooter1" Min="9" Max="12" Source="Machine" />
+      <Mob4 Robot="Shooter3" Min="5" Max="7" Source="Machine" />
+    </Zone4>
+    <Zone5 Rooms="3" Patterns="open_cavern open_donut seg_star seg_hourglass" Music="GoodRobot-Factory Floor.OGG" Door="DoorSwarm" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="WallTurret1" Min="4" Max="6" Source="Machine" />
+      <Mob1 Robot="Shooter3" Min="4" Max="6" Source="Machine" />
+      <Mob2 Robot="Shooter3" Min="3" Max="4" />
+      <Mob3 Robot="SwarmShooter1" Min="14" Max="18" />
+    </Zone5>
+    <Zone6 Rooms="3" Patterns="open_grid2 open_tunnel" Music="GoodRobot-Logic Circus.OGG" Door="DoorSwarm" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="SwarmShooter1" Min="18" Max="24" />
+      <Mob1 Robot="Shooter3" Min="4" Max="6" Source="Machine" />
+    </Zone6>
+    <Zone7 Rooms="4" Patterns="seg_quadrant2 tight_trident vert_shafts open_x2" Music="GoodRobot-Factory Floor.OGG" Door="DoorMiniboss" EndMachine="Upgrade" Forcefield="boss">
+      <Mob0 Robot="ShooterMiniboss" Min="1" Max="1" Room="2" />
+      <Mob1 Robot="Shooter1" Min="8" Max="10" />
+      <Mob2 Robot="Shooter2" Min="4" Max="5" Source="Machine" />
+      <Mob3 Robot="Shooter3" Min="2" Max="4" />
+    </Zone7>
+	<Zone8 Rooms="4" Patterns="open_arena" Music="GoodRobot-Defragged.OGG" Door="DoorBoss" EndMachine="Shop" Forcefield="boss">
+      <Mob0 Robot="BossL0" Min="1" Max="1" Room="2" />
+      <Mob1 Robot="SpamShooter1" Min="3" Max="4" Source="Machine" Room="2" />
+      <Mob2 Robot="SpamShooter1" Min="7" Max="9" Source="Machine" Room="1" />
+      <Mob3 Robot="WallTurret1" Min="6" Max="9" Room="1" />
+    </Zone8>
+  </Level0>
+
+  <Level1>
+    <Properties Title="Chapter One" Subtitle="Ecologically Safe Junkyard" Music="GoodRobot-Serve the Humans Lasers.OGG" ZonesMin="3" ZonesMax="3" />
+    <Textures
+      Foreground="tilesets/atlas_junkyard_fore.png"
+      Middle="tilesets/atlas_junkyard_back1.png"
+      Background="tilesets/atlas_junkyard_back2.png"
+      Sky="cave.png" />
+    <Motif0
+      Foreground="#86A"
+      Middle="#85A"
+      Background="#75A"
+      Lamp="#08B"
+      Sky="#75A"
+      Light="#08B"
+      Fog="0.6"
+      Machines="BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif1
+      Foreground="#77B"
+      Middle="#449"
+      Background="#44C"
+      Lamp="#227"
+      Sky="#66F"
+      Light="#188"
+      Fog="0.6"
+      Machines="BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif2
+      Foreground="#4DD"
+      Middle="#4DD"
+      Background="#4DD"
+      Lamp="#07C"
+      Sky="#4DD"
+      Light="#07C"
+      Fog="0.6"
+      Machines="BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif3
+      Foreground="#68D"
+      Middle="#57B"
+      Background="#57B"
+      Lamp="#34A"
+      Sky="#45C"
+      Light="#62A"
+      Fog="0.6"
+      Machines="BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif4
+      Foreground="#43C"
+      Middle="#24D"
+      Background="#57C"
+      Lamp="#33C"
+      Sky="#5AE"
+      Light="#89D"
+      Fog="0.6"
+      Machines="BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+
+    <Zone0 Rooms="3" Patterns="seg_homing" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="Spider4" Min="4" Max="6" />
+      <Mob1 Robot="Grub1" Min="5" Max="6" />
+      <Mob2 Robot="Shooter4" Min="5" Max="6" />
+    </Zone0>
+    <Zone1 Rooms="4" Patterns="tight_mosaic tight_squiggle tight_snake2 open_shelf" Music="GoodRobot-Unwelcoming Party.OGG" Door="DoorSwarm" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="Spider1" Min="6" Max="8" />
+      <Mob1 Robot="Spider3" Min="5" Max="5" />
+      <Mob2 Robot="SpiderFire" Min="3" Max="5" />
+      <Mob3 Robot="SwarmShooter1L1" Min="5" Max="6" />
+    </Zone1>
+    <Zone2 Rooms="4" Patterns="tight_snake tight_squiggle2 seg_homing" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="Spider2" Min="6" Max="9" />
+      <Mob1 Robot="Spider4" Min="4" Max="5" />
+      <Mob2 Robot="SpiderFire" Min="3" Max="4" />
+      <Mob3 Robot="Shooter4" Min="4" Max="5" />
+    </Zone2>
+    <!--Spider dark zone-->
+    <Zone3 Rooms="4" Patterns="tight_mosaic open_shelf tight_squiggle tight_snake2" Music="GoodRobot-Circuit Breaker.OGG" Door="DoorDarkroom" EndMachine="Shop" Forcefield="none">
+      <Motif
+      Foreground="#06A"
+      Middle="#045"
+      Background="#034"
+      Lamp="#6CF"
+      Sky="#024"
+      Light="#032"
+      Fog="0.4"
+      Blind="1"
+      Machines="BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+
+      <Mob0 Robot="Spider3" Min="6" Max="8" />
+      <Mob1 Robot="Spider5" Min="4" Max="5" />
+      <Mob2 Robot="SpiderSpammer" Min="4" Max="6" />
+      <Mob3 Robot="SwarmShooter1L1" Min="5" Max="6" />
+    </Zone3>
+    <Zone4 Rooms="4" Patterns="tight_mosaic tight_squiggle tight_snake" Music="GoodRobot-Unwelcoming Party.OGG" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="Shooter4" Min="7" Max="9" />
+      <Mob1 Robot="Spider4" Min="4" Max="5" />
+      <Mob2 Robot="Spider5" Min="3" Max="4" />
+      <Mob3 Robot="SpiderSpammer" Min="4" Max="5" />
+    </Zone4>
+    <Zone5 Rooms="4" Patterns="tight_squiggle2 open_shelf seg_homing open_x" Door="DoorRobots" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="Grub1" Min="6" Max="8" />
+      <Mob1 Robot="Grub3" Min="4" Max="6" />
+      <Mob2 Robot="GrubFlak" Min="3" Max="4" />
+      <Mob3 Robot="SwarmShooter1L1" Min="5" Max="6" />
+    </Zone5>
+    <Zone6 Rooms="4" Patterns="tight_spiral open_x2 tight_snake2 tight_alcove" Music="GoodRobot-Unwelcoming Party.OGG" Door="DoorWallDamage" EndMachine="Upgrade" Forcefield="none">
+      <Motif
+      Foreground="#F11"
+      Middle="#E73"
+      Background="#E63"
+      Sky="#F54"
+      Lamp="#E93"
+      Light="#E93"
+      Fog="0.3"
+      WallDamage="50"
+      Machines="FloorElectric1 FloorElectric2 LeftElectric1 LeftElectric2 CeilingElectric1 CeilingElectric2 RightElectric1 RightElectric2" 
+      >
+      <Textures
+      Foreground="tilesets/atlas_electric_fore.png"
+      Middle="tilesets/atlas_electric_back1.png"
+      Background="tilesets/atlas_electric_back2.png"
+      Sky="cave.png" />
+      </Motif>
+      <Mob0 Robot="Grub4" Min="5" Max="6" />
+      <Mob1 Robot="SpiderSpammer" Min="3" Max="4" />
+      <Mob2 Robot="GrubFlak" Min="6" Max="9" />
+      <Mob3 Robot="Shooter4" Min="4" Max="5" />
+    </Zone6>
+    <!--Grub dark zone-->
+    <Zone7 Rooms="4" Patterns="open_x seg_rooms2 tight_squiggle2 tight_trident" Music="GoodRobot-Bring a Flashlight.OGG" Door="DoorDarkroom" EndMachine="Shop" Forcefield="none">
+      <Motif
+      Foreground="#06A"
+      Middle="#045"
+      Background="#034"
+      Lamp="#6CF"
+      Sky="#024"
+      Light="#032"
+      Fog="0.4"
+      Blind="1"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+
+      <Mob0 Robot="Grub2" Min="6" Max="8" />
+      <Mob1 Robot="GrubFlak" Min="4" Max="5" />
+      <Mob2 Robot="Grub3" Min="5" Max="7" />
+      <Mob3 Robot="Shooter4" Min="3" Max="4" />
+    </Zone7>
+    <Zone8 Rooms="4" Patterns="tight_snake seg_homing open_donut2" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="Grub2" Min="6" Max="8" />
+      <Mob1 Robot="Grub4" Min="3" Max="5" />
+      <Mob2 Robot="GrubFlak" Min="4" Max="4" />
+      <Mob3 Robot="SwarmShooter1L1" Min="5" Max="6" />
+    </Zone8>
+    <Zone9 Rooms="4" Patterns="tight_mosaic tight_squiggle seg_quadrant" Music="GoodRobot-Melting Point Blank.OGG" Door="DoorShop" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="ChestT1" Min="4" Max="5" />
+      <Mob1 Robot="ChestT1Trap" Min="2" Max="4" />
+      <Mob2 Robot="ChestT2" Min="1" Max="2" />
+      <Mob3 Robot="Grub3" Min="5" Max="7" />
+      <Mob4 Robot="GrubFlak" Min="4" Max="6" />
+      <Mob5 Robot="SpiderSpammer" Min="2" Max="4" />
+      <Mob6 Robot="SwarmShooter1L1" Min="5" Max="7" />
+    </Zone9>
+    <Zone10 Rooms="6" Patterns="tight_mosaic tight_squiggle tight_snake2 tight_stairs tight_squiggle2 seg_homing" Music="GoodRobot-Unwelcoming Party.OGG" Door="DoorBigRoom" EndMachine="None" Forcefield="none">
+      <Mob0 Robot="Spider1" Min="8" Max="10" />
+      <Mob1 Robot="Spider3" Min="3" Max="4" />
+      <Mob2 Robot="Shooter4" Min="4" Max="5" Source="Machine" />
+      <Mob3 Robot="SpiderFire" Min="3" Max="5" />
+    </Zone10>
+    <Zone11 Rooms="4" Patterns="tight_stairs seg_rooms1 open_shelf tight_alcove2" Door="DoorMiniboss" EndMachine="Shop" Forcefield="boss">
+      <Mob0 Robot="SpiderMiniboss" Min="1" Max="1" Room="2" />
+      <Mob1 Robot="Spider1" Min="5" Max="6" />
+      <Mob2 Robot="Spider4" Min="3" Max="4" />
+      <Mob3 Robot="SpiderSpammer" Min="3" Max="4" />
+      <Mob4 Robot="SwarmShooter1L1" Min="5" Max="6" />
+    </Zone11>
+    <Zone12 Rooms="4" Patterns="tight_stairs seg_rooms2 seg_quadrant2 tight_alcove" Door="DoorMiniboss" EndMachine="Upgrade" Forcefield="boss">
+      <Mob0 Robot="GrubMiniboss" Min="1" Max="1" Room="2" />
+      <Mob1 Robot="Grub1" Min="4" Max="6" />
+      <Mob2 Robot="Grub4" Min="3" Max="4" />
+      <Mob3 Robot="GrubFlak" Min="3" Max="4" />
+      <Mob4 Robot="SwarmShooter1L1" Min="5" Max="7" />
+    </Zone12>
+    <Zone13 Rooms="3" Patterns="open_arena" Music="GoodRobot-Defragged.OGG" Door="DoorBoss" EndMachine="Shop" Forcefield="boss">
+      <Mob0 Robot="BossL1" Min="1" Max="1" />
+	  <Mob1 Robot="Shooter4" Min="4" Max="4" />
+      <!--Old bosses-->
+      <!--<Mob3 Robot="BorerBoss" Min="1" Max="1" />-->
+      <!--<Mob3 Robot="GrubBoss" Min="1" Max="1" />-->
+    </Zone13>
+  </Level1>
+
+  <Level2>
+    <Properties Title="Chapter Two" Subtitle="Refrigeration Unit" Music="GoodRobot-Banger.OGG" Fog="0.3" ZonesMin="3" ZonesMax="3" />
+    <Textures
+      Foreground="tilesets/atlas_snow_fore.png"
+      Middle="tilesets/atlas_snow_back1.png"
+      Background="tilesets/atlas_snow_back2.png"
+      Sky="cave.png" />
+    <Motif0
+      Foreground="#EEE"
+      Middle="#57B"
+      Background="#69C"
+      Lamp="#540"
+      Sky="#BFF"
+      Light="#BFF"
+      Fog="0.6"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif1
+      Foreground="#DDF"
+      Middle="#8AB"
+      Background="#457"
+      Lamp="#FF9"
+      Sky="#789"
+      Light="#5B9"
+      Fog="0.6"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif2
+      Foreground="#DEF"
+      Middle="#88A"
+      Background="#435"
+      Lamp="#FF5"
+      Sky="#212"
+      Light="#ACB"
+      Fog="0.6"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif3
+      Foreground="#EEF"
+      Middle="#568"
+      Background="#444"
+      Lamp="#FF9"
+      Sky="#221"
+      Light="#ABB"
+      Fog="0.6"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif4
+      Foreground="#DEE"
+      Middle="#09A"
+      Background="#277"
+      Lamp="#FEA"
+      Sky="#165"
+      Light="#AFD"
+      Fog="0.6"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+
+    <Zone0 Rooms="3" Patterns="seg_rooms2 seg_quadrant open_porus" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="SpamShooter2" Min="4" Max="7" />
+      <Mob1 Robot="SplitterShooter" Min="2" Max="3" />
+      <Mob2 Robot="SpamShooterMissiles2" Min="3" Max="5" />
+    </Zone0>
+    <Zone1 Rooms="3" Patterns="open_porus2 seg_quadrant2 open_x2 open_box1" Music="GoodRobot-InfiniteLoop.OGG" Door="DoorRobots" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="SpamShooter2" Min="7" Max="9" />
+      <Mob1 Robot="SpamShooterMissiles2" Min="4" Max="5" />
+      <Mob2 Robot="SplitterShooter" Min="2" Max="3" Source="Machine" />
+    </Zone1>
+    <Zone2 Rooms="3" Patterns="seg_star seg_quadrant tight_trident" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="SplitterShooter" Min="3" Max="4" />
+      <Mob1 Robot="SpamShooter2" Min="6" Max="8" />
+      <Mob2 Robot="SpamShooterMissiles2" Min="2" Max="3" Source="Machine" />
+    </Zone2>
+    <Zone3 Rooms="4" Patterns="open_box2 open_grid3 comp_zigzag" Music="GoodRobot-DancingAngry.OGG" Door="DoorSwarm" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="SpamShooter1L2B" Min="6" Max="9" />
+      <Mob1 Robot="SpamShooter1L2B" Min="3" Max="4" />
+      <Mob2 Robot="SplitterShooter" Min="1" Max="2" />
+      <Mob3 Robot="SplitterShooter" Min="1" Max="2" />
+    </Zone3>
+    <!--Hive dark zone-->
+    <Zone4 Rooms="4" Patterns="seg_quadrant2 seg_rooms2 seg_star open_debris2" Music="GoodRobot-Battery Low.OGG" Door="DoorDarkroom" EndMachine="Upgrade" Forcefield="none">
+      <Motif
+      Foreground="#730"
+      Middle="#530"
+      Background="#420"
+      Lamp="#FA4"
+      Sky="#410"
+      Light="#311"
+      Fog="0.4"
+      Blind="1"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+
+      <Mob0 Robot="SplitterShooter" Min="2" Max="4" />
+      <Mob1 Robot="SpamShooter2" Min="7" Max="9" Source="Machine" />
+      <Mob2 Robot="SpamShooterMissiles2" Min="4" Max="5" />
+    </Zone4>
+    <Zone5 Rooms="4" Patterns="open_tetris seg_hourglass2" Music="GoodRobot-Unplugged.OGG" Door="DoorRobots" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="SpamShooter2" Min="4" Max="6" />
+      <Mob1 Robot="SpamShooterMissiles2" Min="3" Max="4" Source="Machine" />
+      <Mob2 Robot="SpamShooterMissiles2" Min="4" Max="5" />
+      <Mob3 Robot="SplitterShooter" Min="1" Max="3" />
+    </Zone5>
+    <Zone6 Rooms="3" Patterns="seg_quadrant open_grid open_debris2 open_box1 open_grid2" Music="GoodRobot-InfiniteLoop.ogg" Door="DoorForcefield" EndMachine="Upgrade" Forcefield="mobs">
+      <Mob0 Robot="SpamShooterMissiles2" Min="3" Max="5" />
+      <Mob1 Robot="SpamShooter2" Min="8" Max="12" Source="Machine" />
+      <Mob2 Robot="SpamShooter1L2B" Min="12" Max="18" Source="Machine" />
+      <Mob3 Robot="SplitterShooter" Min="4" Max="5" Source="Machine" />
+    </Zone6>
+    <Zone7 Rooms="4" Patterns="comp_zot seg_star tight_trident tight_alcove2" Music="GoodRobot-Melting Point Blank.OGG" Door="DoorShop" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="ChestT2" Min="5" Max="7" />
+      <Mob1 Robot="ChestT2Trap" Min="2" Max="3" />
+      <Mob2 Robot="SpamShooter2" Min="6" Max="8" />
+      <Mob3 Robot="SplitterShooter" Min="2" Max="3" Source="Machine" />
+      <Mob4 Robot="SplitterShooter" Min="1" Max="2" />
+    </Zone7>
+    <Zone8 Rooms="4" Patterns="seg_hourglass2 open_x comp_ampule tight_hat" Door="DoorWallDamage" EndMachine="Upgrade" Forcefield="none">
+      <Motif
+      Foreground="#F11"
+      Middle="#E73"
+      Background="#E63"
+      Sky="#F54"
+      Lamp="#E93"
+      Light="#E93"
+      Fog="0.3"
+      WallDamage="75"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight FloorElectric1 FloorElectric2 LeftElectric1 LeftElectric2 CeilingElectric1 CeilingElectric2 RightElectric1 RightElectric2">
+      <Textures
+      Foreground="tilesets/atlas_electric_fore.png"
+      Middle="tilesets/atlas_electric_back1.png"
+      Background="tilesets/atlas_electric_back2.png"
+      Sky="cave.png" />
+      </Motif>
+      <Mob0 Robot="SplitterShooter" Min="3" Max="4" />
+      <Mob1 Robot="SpamShooter2" Min="6" Max="9" />
+      <Mob2 Robot="SpamShooterMissiles2" Min="4" Max="5" Source="Machine" />
+      <Mob3 Robot="SpamShooterMissiles2" Min="2" Max="4" />
+    </Zone8>
+    <Zone9 Rooms="4" Patterns="open_tunnel2 open_grid3 seg_rooms1 tight_trident" Music="GoodRobot-DancingAngry.ogg" Door="DoorRobots" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="SplitterShooter" Min="2" Max="5" />
+      <Mob1 Robot="SpamShooter2" Min="5" Max="8" />
+      <Mob2 Robot="SpamShooterMissiles2" Min="4" Max="6" Source="Machine" />
+      <Mob3 Robot="SpamShooter2" Min="5" Max="8" Source="Machine" />
+    </Zone9>
+    <Zone10 Rooms="4" Patterns="comp_zot seg_hourglass2 open_cavern tight_stairs" Music="GoodRobot-Unplugged.ogg" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="SpamShooter2" Min="3" Max="5" Source="Machine" />
+      <Mob1 Robot="SpamShooterMissiles2" Min="4" Max="6" />
+      <Mob2 Robot="SplitterShooter" Min="3" Max="4" />
+    </Zone10>
+    <Zone11 Rooms="7" Patterns="seg_quadrant2 open_grid2 open_x2 open_box2 open_grid2" Music="GoodRobot-InfiniteLoop.ogg" Door="DoorBigRoom" EndMachine="None" Forcefield="none">
+      <Mob0 Robot="SplitterShooter" Min="2" Max="3" />
+      <Mob1 Robot="SpamShooter1L2B" Min="5" Max="7" Source="Machine" />
+      <Mob2 Robot="SpamShooterMissiles2" Min="4" Max="5" />
+    </Zone11>
+    <Zone12 Rooms="4" Patterns="open_donut open_grid comp_ampule vert_shafts" Music="GoodRobot-Unplugged.ogg" Door="DoorMiniboss" EndMachine="Upgrade" Forcefield="boss">
+      <Mob0 Robot="HiveMiniboss" Min="1" Max="1" Room="2" />
+      <Mob1 Robot="SpamShooterMissiles2" Min="3" Max="5" />
+      <Mob2 Robot="SpamShooterMissiles2" Min="3" Max="5" Source="Machine" />
+      <Mob3 Robot="SplitterShooter" Min="2" Max="3" Source="Machine" />
+      <Mob4 Robot="SpamShooter1L2B" Min="10" Max="14" Source="Machine" />
+    </Zone12>
+    <Zone13 Rooms="4" Patterns="open_arena" Music="GoodRobot-Defragged.OGG" Door="DoorBoss" EndMachine="Shop" Forcefield="boss">
+      <Mob0 Robot="BossL2" Min="1" Max="1" Room="2" />
+      <Mob1 Robot="SplitterShooter" Min="3" Max="5" Room="1" />
+      <Mob2 Robot="SpamShooter2" Min="6" Max="9" Room="1" />
+      <!--<Mob3 Robot="SpamShooter2" Min="4" Max="6" Source="Machine" Room="2"/>-->
+    </Zone13>
+  </Level2>
+
+  <Level3>
+    <Properties Title="Chapter Three" Subtitle="Neo-Jaipur" Music="GoodRobot-I Lost My Loose Screw.OGG" Fog="0.3" ZonesMin="3" ZonesMax="3" />
+    <Textures
+      Foreground="tilesets/atlas_city_fore.png"
+      Middle="tilesets/atlas_city_back1.png"
+      Background="tilesets/atlas_city_back2.png"
+      Sky="cave.png" />
+    <Motif0
+      Foreground="#A24"
+      Middle="#B55"
+      Background="#C76"
+      Lamp="#A24"
+      Sky="#EB8"
+      Light="#EB8"
+      Fog="0.6"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif1
+      Foreground="#E57"
+      Middle="#D57"
+      Background="#C58"
+      Lamp="#E57"
+      Sky="#C69"
+      Light="#CA3"
+      Fog="0.6"
+        Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif2
+      Foreground="#913"
+      Middle="#A34"
+      Background="#C65"
+      Lamp="#913"
+      Sky="#E97"
+      Light="#E97"
+      Fog="0.6"
+        Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif3
+      Foreground="#62C"
+      Middle="#84A"
+      Background="#A57"
+      Lamp="#52C"
+      Sky="#E85"
+      Light="#E85"
+      Fog="0.6"
+        Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif4
+      Foreground="#DC5"
+      Middle="#D95"
+      Background="#D75"
+      Lamp="#DC5"
+      Sky="#D56"
+      Light="#C57"
+      Fog="0.6"
+        Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+
+    <Zone0 Rooms="3" Patterns="seg_rooms1 seg_quadrant open_box2" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="Spawner3" Min="4" Max="7" />
+      <Mob1 Robot="Spawner3" Min="5" Max="8" />
+      <Mob2 Robot="SpamShooterMissiles1" Min="3" Max="5" />
+    </Zone0>
+    <Zone1 Rooms="3" Patterns="seg_star seg_quadrant2 open_x2 open_box1" Music="GoodRobot-I Reboot.OGG" Door="DoorRobots" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="Hive1" Min="6" Max="8" />
+      <Mob1 Robot="Hive1" Min="6" Max="8" />
+      <Mob2 Robot="SpamShooterMissiles1" Min="2" Max="3" Source="Machine" />
+    </Zone1>
+    <Zone2 Rooms="3" Patterns="seg_star seg_quadrant tight_trident" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="Hive2" Min="6" Max="8" />
+      <Mob1 Robot="Hive2" Min="6" Max="8" />
+      <Mob2 Robot="SpamShooterMissiles1" Min="2" Max="3" Source="Machine" />
+    </Zone2>
+    <Zone3 Rooms="4" Patterns="open_debris open_tunnel2 comp_zigzag" Music="GoodRobot-I Reboot.OGG" Door="DoorSwarm" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="Spawner1" Min="5" Max="8" />
+      <Mob1 Robot="Spawner1" Min="3" Max="4" />
+      <Mob2 Robot="Hive3" Min="5" Max="6" />
+      <Mob3 Robot="Hive3" Min="4" Max="5" />
+    </Zone3>
+    <!--Hive dark zone-->
+    <Zone4 Rooms="4" Patterns="seg_quadrant2 seg_rooms2 seg_star open_debris2" Music="GoodRobot-Battery Low.OGG" Door="DoorDarkroom" EndMachine="Upgrade" Forcefield="none">
+      <Motif
+      Foreground="#730"
+      Middle="#530"
+      Background="#420"
+      Lamp="#FA4"
+      Sky="#410"
+      Light="#311"
+      Fog="0.4"
+      Blind="1"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+
+      <Mob0 Robot="Spawner2" Min="4" Max="5" />
+      <Mob1 Robot="Spawner2" Min="7" Max="9" Source="Machine" />
+      <Mob2 Robot="Hive1" Min="7" Max="9" />
+    </Zone4>
+    <Zone5 Rooms="4" Patterns="open_debris open_tunnel" Music="GoodRobot-I Reboot.OGG" Door="DoorRobots" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="Spawner3" Min="4" Max="6" />
+      <Mob1 Robot="Spawner3" Min="3" Max="4" Source="Machine" />
+      <Mob2 Robot="Hive3" Min="4" Max="5" />
+      <Mob3 Robot="Hive3" Min="3" Max="5" />
+    </Zone5>
+    <Zone6 Rooms="3" Patterns="seg_quadrant open_grid open_debris2 open_box1 open_grid2" Door="DoorForcefield" EndMachine="Upgrade" Forcefield="mobs">
+      <Mob0 Robot="Hive3" Min="3" Max="5" />
+      <Mob1 Robot="Hive2" Min="8" Max="12" Source="Machine" />
+      <Mob2 Robot="SpamShooter1L2B" Min="12" Max="18" Source="Machine" />
+      <Mob3 Robot="Spawner1" Min="9" Max="10" Source="Machine" />
+    </Zone6>
+    <Zone7 Rooms="4" Patterns="comp_zot seg_star tight_trident tight_alcove2" Music="GoodRobot-Melting Point Blank.OGG" Door="DoorShop" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="ChestT2" Min="5" Max="7" />
+      <Mob1 Robot="ChestT2Trap" Min="2" Max="3" />
+      <Mob2 Robot="Spawner2" Min="7" Max="9" />
+      <Mob3 Robot="Hive3" Min="5" Max="6" Source="Machine" />
+      <Mob4 Robot="Hive3" Min="3" Max="5" />
+    </Zone7>
+    <Zone8 Rooms="4" Patterns="seg_hourglass2 open_x comp_zot tight_alcove" Door="DoorWallDamage" EndMachine="Upgrade" Forcefield="none">
+      <Motif
+      Foreground="#F11"
+      Middle="#E73"
+      Background="#E63"
+      Sky="#F54"
+      Lamp="#E93"
+      Light="#E93"
+      Fog="0.3"
+      WallDamage="100"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight FloorElectric1 FloorElectric2 LeftElectric1 LeftElectric2 CeilingElectric1 CeilingElectric2 RightElectric1 RightElectric2">
+      <Textures
+      Foreground="tilesets/atlas_electric_fore.png"
+      Middle="tilesets/atlas_electric_back1.png"
+      Background="tilesets/atlas_electric_back2.png"
+      Sky="cave.png" />
+      </Motif>
+      <Mob0 Robot="Hive2" Min="4" Max="5" />
+      <Mob1 Robot="Hive3" Min="3" Max="4" />
+      <Mob2 Robot="SpamShooterMissiles1" Min="4" Max="5" Source="Machine" />
+      <Mob3 Robot="SpamShooterMissiles1" Min="2" Max="4" />
+    </Zone8>
+    <Zone9 Rooms="4" Patterns="open_tunnel2 open_grid3 seg_rooms1 open_donut2" Music="GoodRobot-I Reboot.OGG" Door="DoorRobots" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="Hive2" Min="1" Max="2" />
+      <Mob1 Robot="Spawner3" Min="6" Max="10" />
+      <Mob2 Robot="Hive3" Min="5" Max="8" Source="Machine" />
+    </Zone9>
+    <Zone10 Rooms="4" Patterns="comp_zot seg_hourglass open_cavern tight_alcove2" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="Hive1" Min="6" Max="8" Source="Machine" />
+      <Mob1 Robot="SpamShooterMissiles1" Min="4" Max="6" />
+      <Mob2 Robot="Hive3" Min="3" Max="5" />
+    </Zone10>
+    <Zone11 Rooms="7" Patterns="seg_quadrant2 open_grid2 open_debris open_box2 open_grid2" Door="DoorBigRoom" EndMachine="None" Forcefield="none">
+      <Mob0 Robot="Spawner2" Min="5" Max="6" />
+      <Mob1 Robot="SpamShooter1L2B" Min="5" Max="7" Source="Machine" />
+      <Mob2 Robot="Spawner1" Min="4" Max="5" />
+    </Zone11>
+    <Zone12 Rooms="4" Patterns="open_donut open_grid open_debris vert_shafts" Music="GoodRobot-I Reboot.OGG" Door="DoorMiniboss" EndMachine="Upgrade" Forcefield="boss">
+      <Mob0 Robot="SpawnerMiniboss" Min="1" Max="1" Room="2" />
+      <Mob1 Robot="SpamShooterMissiles1" Min="5" Max="8" Source="Machine" />
+      <Mob2 Robot="Spawner1" Min="3" Max="5" />
+      <Mob3 Robot="Spawner2" Min="2" Max="3" />
+    </Zone12>
+    <Zone13 Rooms="4" Patterns="open_arena" Music="GoodRobot-Defragged.OGG" Door="DoorBoss" EndMachine="Shop" Forcefield="boss">
+      <Mob0 Robot="BossL2B" Min="1" Max="1" Room="2" />
+      <Mob1 Robot="Spawner1" Min="6" Max="6" Room="2"/>
+      <Mob2 Robot="Spawner1" Min="4" Max="7" Room="1" />
+      <!--<Mob4 Robot="Spawner2" Min="1" Max="2" />-->
+    </Zone13>
+  </Level3>
+
+  <Level4>
+    <Properties Title="Chapter Four" Subtitle="Geothermal Caverns" Music="GoodRobot-My Logic is Bigger.OGG" ZonesMin="4" ZonesMax="4" />
+    <Textures
+      Foreground="tilesets/atlas_geothermal_fore.png"
+      Middle="tilesets/atlas_geothermal_back1.png"
+      Background="tilesets/atlas_geothermal_back2.png"
+      Sky="cave.png" />
+    <Motif0
+      Foreground="#E93"
+      Middle="#E73"
+      Background="#E63"
+      Sky="#F54"
+      Lamp="#E93"
+      Light="#E93"
+      Fog="0.3"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif1
+      Foreground="#676"
+      Middle="#854"
+      Background="#B33"
+      Lamp="#676"
+      Sky="#E22"
+      Light="#676"
+      Fog="0.6"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif2
+      Foreground="#DA4"
+      Middle="#D95"
+      Background="#D85"
+      Lamp="#DA4"
+      Sky="#D87"
+      Light="#DA4"
+      Fog="0.6"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif3
+      Foreground="#724"
+      Middle="#723"
+      Background="#B21"
+      Lamp="#313"
+      Sky="#F40"
+      Light="#F40"
+      Fog="0.6"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif4
+      Foreground="#803"
+      Middle="#922"
+      Background="#B42"
+      Lamp="#803"
+      Sky="#D72"
+      Light="#30F"
+      Fog="0.6"
+        Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+
+    <Zone0 Rooms="4" Patterns="open_porus2" Door="DoorRobots" EndMachine="Upgrade">
+      <Mob0 Robot="FlameShooter1" Min="14" Max="18" />
+      <Mob1 Robot="Mine1" Min="34" Max="46" />
+    </Zone0>
+    <Zone1 Rooms="4" Patterns="seg_star open_porus tight_snake2 tight_hat open_donut2" Music="GoodRobot-So Many Lasers.OGG" Door="DoorRobots" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="FlameShooter1" Min="16" Max="20" />
+      <Mob1 Robot="SpamShooter2L3" Min="2" Max="3" Source="Machine" />
+      <Mob2 Robot="ShurikenShooter1" Min="4" Max="5" Source="Machine" />
+      <Mob3 Robot="ShurikenShooter1" Min="4" Max="5" />
+      <Mob4 Robot="MineLayer1" Min="2" Max="3" />
+    </Zone1>
+    <Zone2 Rooms="4" Patterns="tight_narrow comp_maze1 tight_snake tight_spiral" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="ShurikenShooter3" Min="2" Max="2" Source="Machine" />
+      <Mob1 Robot="ShurikenShooter1" Min="6" Max="9" Source="Machine" />
+      <Mob2 Robot="MineLayer1" Min="3" Max="6" Source="Machine"/>
+      <Mob3 Robot="BigSaw1" Min="12" Max="12" />
+    </Zone2>
+    <Zone3 Rooms="4" Patterns="seg_rooms2 open_x2 tight_snake2 tight_alcove" Music="GoodRobot-Unwelcoming Party.OGG" Door="DoorWallDamage" EndMachine="Shop" Forcefield="none">
+      <Motif
+      Foreground="#F11"
+      Middle="#E73"
+      Background="#E63"
+      Sky="#F54"
+      Lamp="#E93"
+      Light="#E93"
+      Fog="0.3"
+      WallDamage="100"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight FloorElectric1 FloorElectric2 LeftElectric1 LeftElectric2 CeilingElectric1 CeilingElectric2 RightElectric1 RightElectric2">
+      <Textures
+      Foreground="tilesets/atlas_electric_fore.png"
+      Middle="tilesets/atlas_electric_back1.png"
+      Background="tilesets/atlas_electric_back2.png"
+      Sky="cave.png" />
+      </Motif>
+      <Mob0 Robot="SpamShooter2L3" Min="4" Max="6" />
+      <Mob1 Robot="Mine1" Min="28" Max="36" />
+      <Mob2 Robot="BigSaw1" Min="18" Max="18" />
+      <Mob3 Robot="ShurikenShooter3" Min="2" Max="2" Source="Machine" />
+    </Zone3>
+    <Zone4 Rooms="3" Patterns="open_grid3 seg_hourglass2 tight_squiggle tight_trident seg_rooms1 tight_cross" Door="DoorForcefield" EndMachine="Upgrade" Forcefield="mobs">
+      <Mob0 Robot="FlameShooter1" Min="12" Max="14" />
+      <Mob1 Robot="ShurikenShooter1" Min="4" Max="6" />
+      <Mob2 Robot="ShurikenShooter1" Min="12" Max="14" Source="Machine" />
+      <Mob3 Robot="ShurikenShooter2" Min="3" Max="4" />
+      <Mob4 Robot="ShurikenShooter2" Min="8" Max="9" Source="Machine" />
+      <Mob5 Robot="BigSaw1" Min="5" Max="8" />
+      <Mob6 Robot="ShurikenShooter3" Min="4" Max="7" Source="Machine" />
+    </Zone4>
+    <Zone5 Rooms="4" Patterns="tight_cross open_x tight_alcove2 seg_rooms2" Music="GoodRobot-Melting Point Blank.OGG" Door="DoorShop" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="ChestT2" Min="6" Max="9"/>
+      <Mob1 Robot="ChestT2Trap" Min="3" Max="4" />
+      <Mob2 Robot="ShurikenShooter2" Min="5" Max="6" />
+      <Mob3 Robot="BigSaw1" Min="4" Max="5" />
+      <Mob4 Robot="SpamShooter2L3" Min="4" Max="5" Source="Machine"/>
+    </Zone5>
+    <Zone6 Rooms="4" Patterns="seg_hourglass seg_quadrant2 comp_zot tight_alcove open_box2" Music="GoodRobot-Unwelcoming Party.OGG" Door="DoorWallDamage" EndMachine="Upgrade" Forcefield="none">
+      <Motif
+      Foreground="#F11"
+      Middle="#E73"
+      Background="#E63"
+      Sky="#F54"
+      Lamp="#E93"
+      Light="#E93"
+      Fog="0.3"
+      WallDamage="100"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight FloorElectric1 FloorElectric2 LeftElectric1 LeftElectric2 CeilingElectric1 CeilingElectric2 RightElectric1 RightElectric2" >
+      <Textures
+      Foreground="tilesets/atlas_electric_fore.png"
+      Middle="tilesets/atlas_electric_back1.png"
+      Background="tilesets/atlas_electric_back2.png"
+      Sky="cave.png" />
+      </Motif>
+
+      <Mob0 Robot="BigSaw1" Min="4" Max="5" />
+      <Mob1 Robot="Mine1" Min="28" Max="36" />
+      <Mob2 Robot="ShurikenShooter3" Min="1" Max="2" Source="Machine" />
+      <Mob3 Robot="ShurikenShooter3" Min="3" Max="4" />
+      <Mob4 Robot="WallTurret3" Min="2" Max="3" Source="Machine" />
+      <Mob5 Robot="WallTurret3" Min="2" Max="3" />
+      <Mob6 Robot="ChestT3" Min="2" Max="2" />
+    </Zone6>
+    <Zone7 Rooms="4" Patterns="tight_snake tight_squiggle seg_hourglass2 tight_cross" Door="DoorRobots" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="SpamShooter2L3" Min="7" Max="9" Source="Machine" />
+      <Mob1 Robot="ShurikenShooter2" Min="4" Max="5" />
+      <Mob2 Robot="ShurikenShooter3" Min="5" Max="7" />
+      <Mob3 Robot="MineLayer1" Min="2" Max="3" Source="Machine" />
+    </Zone7>
+    <Zone8 Rooms="3" Patterns="comp_ampule open_grid3 comp_maze1 comp_zigzag" Music="GoodRobot-Circuit Breaker.OGG" Door="DoorDarkroom" EndMachine="Upgrade" Forcefield="none">
+      <Motif
+      Foreground="#820"
+      Middle="#520"
+      Background="#520"
+      Lamp="#F92"
+      Sky="#520"
+      Light="#410"
+      Fog="0.4"
+      Blind="1"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+      <Mob0 Robot="FlameShooter1" Min="24" Max="28" />
+      <Mob1 Robot="Hive3" Min="4" Max="5" />
+      <Mob2 Robot="Mine1" Min="36" Max="42" />
+    </Zone8>
+    <Zone9 Rooms="7" Patterns="open_grid3 seg_hourglass2 tight_squiggle tight_trident seg_rooms2 tight_cross" Door="DoorBigRoom" EndMachine="None" Forcefield="none">
+      <Mob0 Robot="FlameShooter1" Min="7" Max="9"  />
+      <Mob1 Robot="ShurikenShooter1" Min="4" Max="6" Source="Machine" />
+      <Mob2 Robot="ShurikenShooter2" Min="3" Max="4" Source="Machine" />
+      <Mob3 Robot="BigSaw1" Min="5" Max="6" />
+      <Mob4 Robot="ShurikenShooter3" Min="4" Max="5" Room="3" Source="Machine"/>
+      <Mob5 Robot="FlameShooter1" Min="7" Max="9" Room="3" />
+      <Mob6 Robot="ShurikenShooter1" Min="6" Max="8" Room="3" />
+      <Mob7 Robot="BigSaw1" Min="5" Max="6" Room="2" />
+      <Mob8 Robot="ShurikenShooter2" Min="6" Max="8" Room="2" Source="Machine" />
+    </Zone9>
+    <Zone10 Rooms="4" Patterns="open_arena" Music="GoodRobot-Defragged.OGG" Door="DoorMiniboss" EndMachine="Upgrade" Forcefield="boss">
+      <Mob0 Robot="JellyMiniboss" Min="1" Max="1" Room="1" />
+      <Mob1 Robot="FlameShooter1" Min="8" Max="12" />
+      <Mob2 Robot="Hive2" Min="6" Max="8" />
+      <Mob3 Robot="Spawner1" Min="6" Max="8" />
+    </Zone10>
+    <Zone11 Rooms="7" Patterns="open_arena open_debris2" Door="DoorBoss" EndMachine="Shop" Forcefield="boss">
+      <Mob0 Robot="WallTurret3" Min="5" Max="7" Room="1" />
+      <Mob1 Robot="WallTurret1L3" Min="5" Max="7" Room="2" />
+	  <Mob2 Robot="Mine1" Min="12" Max="14" Room="3" />
+	  <Mob4 Robot="FlameShooter1" Min="4" Max="8" Room="4" />
+      <Mob3 Robot="BossL3" Min="1" Max="1" Room="1" />
+    </Zone11>
+  </Level4>
+
+  <Level5>
+    <Properties Title="Chapter Five" Subtitle="Aqueous Storage Layer" Music="GoodRobot-We Come in Pieces.OGG" Fog="0.3" ZonesMin="4" ZonesMax="4" />
+    <Textures
+      Foreground="tilesets/atlas_underwater_fore.png"
+      Middle="tilesets/atlas_underwater_back1.png"
+      Background="tilesets/atlas_underwater_back2.png"
+      Sky="cave.png" />
+    <Motif0
+      Foreground="#59E"
+      Middle="#57B"
+      Background="#66A"
+      Lamp="#59E"
+      Sky="#758"
+      Light="#59E"
+      Fog="0.8"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif1
+      Foreground="#573"
+      Middle="#772"
+      Background="#971"
+      Lamp="#573"
+      Sky="#C71"
+      Light="#048"
+      Fog="0.8"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif2
+      Foreground="#51C"
+      Middle="#55C"
+      Background="#58D"
+      Lamp="#51C"
+      Sky="#5DE"
+      Light="#5DE"
+      Fog="0.6"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+
+    <Zone0 Rooms="3" Patterns="seg_rooms1 seg_quadrant open_box2" Door="DoorRobots" EndMachine="Upgrade">
+      <Mob0 Robot="BigMissileSquid" Min="6" Max="8" />
+      <Mob1 Robot="BounceMissileShooter1" Min="7" Max="9" Source="Machine" />
+    </Zone0>
+    <Zone1 Rooms="3" Patterns="seg_star seg_quadrant2 tight_stairs" Music="GoodRobot-Logic Circus.OGG" Door="DoorRobots" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="Squid1" Min="10" Max="12" />
+      <Mob1 Robot="Squid2" Min="5" Max="8" />
+      <Mob2 Robot="Squid3" Min="4" Max="5" />
+      <Mob3 Robot="SpamShooterMissiles2" Min="5" Max="8" Source="Machine" />
+    </Zone1>
+    <Zone2 Rooms="3" Patterns="open_debris open_tunnel open_shelf open_box2" Music="GoodRobot-Factory Floor.OGG" Door="DoorForcefield" EndMachine="Upgrade" Forcefield="mobs">
+      <Mob0 Robot="BigMissileSquid" Min="3" Max="5" />
+      <Mob1 Robot="BigMissileSquid" Min="8" Max="10" Source="Machine" />
+      <Mob2 Robot="Squid4" Min="3" Max="5" />
+      <Mob3 Robot="Squid2" Min="12" Max="15" Source="Machine" />
+      <Mob4 Robot="Squid2" Min="3" Max="4" />
+      <Mob5 Robot="Squid5" Min="5" Max="7" Source="Machine" />
+      <Mob6 Robot="SpamShooterMissiles2" Min="8" Max="9" Source="Machine" />
+    </Zone2>
+    <Zone3 Rooms="4" Patterns="seg_quadrant open_grid2 open_debris2 open_box1" Music="GoodRobot-I Lost My Loose Screw.OGG" Door="DoorRobots" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="Squid3" Min="4" Max="5" />
+      <Mob1 Robot="Squid3" Min="5" Max="6" Source="Machine" />
+      <Mob2 Robot="BounceMissileShooter1" Min="4" Max="6" Source="Machine" />
+      <Mob3 Robot="BigMissileSquid" Min="5" Max="8" />
+      <Mob4 Robot="SpamShooterMissiles2" Min="4" Max="6" />
+    </Zone3>
+    <Zone4 Rooms="4" Patterns="open_tunnel2 open_grid seg_rooms2 open_donut2" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="Squid2" Min="6" Max="9" Source="Machine" />
+      <Mob1 Robot="Squid2" Min="4" Max="6" />
+      <Mob2 Robot="Squid4" Min="3" Max="4" />
+      <Mob3 Robot="Squid5" Min="3" Max="6" />
+      <Mob4 Robot="BigMissileSquid" Min="4" Max="6" />
+    </Zone4>
+    <Zone5 Rooms="3" Patterns="seg_hourglass open_grid3 open_tetris seg_quadrant2 open_box2" Music="GoodRobot-Bring a Flashlight.OGG" Door="DoorDarkroom" EndMachine="Shop" Forcefield="none">
+      <Motif
+      Foreground="#02A"
+      Middle="#027"
+      Background="#027"
+      Lamp="#3AF"
+      Sky="#027"
+      Light="#026"
+      Fog="0.4"
+      Blind="1"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+
+      <Mob0 Robot="Squid3" Min="9" Max="10" />
+      <Mob1 Robot="FlameShooter1L4" Min="12" Max="14" />
+      <Mob2 Robot="Squid4" Min="5" Max="7" />
+      <Mob3 Robot="SpamShooterMissiles2" Min="7" Max="8" Source="Machine"/>
+    </Zone5>
+    <Zone6 Rooms="4" Patterns="seg_hourglass2 open_x2 tight_stairs open_tetris open_box1" Music="We Come In Pieces.OGG" Door="DoorShop" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="ChestT3" Min="5" Max="7" />
+      <Mob1 Robot="ChestT3Trap" Min="3" Max="4" />
+      <Mob2 Robot="Squid3" Min="6" Max="9" Source="Machine" />
+      <Mob3 Robot="Squid5" Min="3" Max="4" />
+      <Mob4 Robot="BigMissileSquid" Min="4" Max="6" />
+    </Zone6>
+    <Zone7 Rooms="4" Patterns="seg_hourglass open_donut2 comp_zot tight_alcove2" Music="GoodRobot-Logic Circus.OGG" Door="DoorWallDamage" EndMachine="Shop" Forcefield="none">
+      <Motif
+      Foreground="#F11"
+      Middle="#E73"
+      Background="#E63"
+      Sky="#F54"
+      Lamp="#E93"
+      Light="#E93"
+      Fog="0.3"
+      WallDamage="125"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight FloorElectric1 FloorElectric2 LeftElectric1 LeftElectric2 CeilingElectric1 CeilingElectric2 RightElectric1 RightElectric2">
+      <Textures
+      Foreground="tilesets/atlas_electric_fore.png"
+      Middle="tilesets/atlas_electric_back1.png"
+      Background="tilesets/atlas_electric_back2.png"
+      Sky="cave.png" />
+      </Motif>
+
+      <Mob0 Robot="Squid4" Min="5" Max="6" />
+      <Mob1 Robot="Mine1L4" Min="12" Max="16" />
+      <Mob2 Robot="ShurikenShooter3" Min="5" Max="6" Source="Machine" />
+      <Mob3 Robot="Squid3" Min="4" Max="5" />
+      <Mob4 Robot="ChestT3" Min="2" Max="3" />
+    </Zone7>
+    <Zone8 Rooms="5" Patterns="comp_zot seg_hourglass2 open_cavern comp_zigzag" Music="GoodRobot-Factory Floor.OGG" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="BounceMissileShooter1" Min="5" Max="8" Source="Machine" />
+      <Mob1 Robot="SpamShooterMissiles2" Min="7" Max="9" />
+      <Mob2 Robot="Squid4" Min="4" Max="5" Source="Machine" />
+      <Mob3 Robot="Squid2" Min="5" Max="7" />
+    </Zone8>
+    <Zone9 Rooms="6" Patterns="open_debris2 open_tunnel2 open_x2 open_box2 open_box1 open_grid3" Music="GoodRobot-Factory Floor.OGG" Door="DoorBigRoom" EndMachine="None" Forcefield="none">
+      <Mob0 Robot="BigMissileSquid" Min="2" Max="4" />
+      <Mob1 Robot="BigMissileSquid" Min="3" Max="5" Source="Machine" />
+      <Mob2 Robot="Squid4" Min="2" Max="4" />
+      <Mob3 Robot="Squid4" Min="2" Max="4" Source="Machine" />
+      <Mob4 Robot="Squid5" Min="2" Max="5" />
+      <Mob5 Robot="SpamShooterMissiles2" Min="2" Max="3" Source="Machine" />
+    </Zone9>
+    <Zone10 Rooms="5" Patterns="open_debris2" Music="GoodRobot-I Lost My Loose Screw.OGG" Door="DoorMiniboss" EndMachine="Upgrade" Forcefield="boss">
+      <Mob0 Robot="SquidMiniboss" Min="1" Max="1" Room="2" />
+      <Mob1 Robot="SpamShooterMissiles2" Min="6" Max="8" />
+      <Mob2 Robot="BigMissileSquid" Min="5" Max="8" Source="Machine" />
+      <Mob3 Robot="BounceMissileShooter1" Min="3" Max="4" Source="Machine" />
+      <Mob4 Robot="BounceMissileShooter1" Min="4" Max="5" />
+    </Zone10>
+    <Zone11 Rooms="5" Patterns="open_arena" Door="DoorBoss" EndMachine="Shop" Forcefield="boss">
+      <Mob0 Robot="BossL4Egg" Min="1" Max="1" Room="3" />
+      <Mob1 Robot="SpamShooterMissiles2" Min="5" Max="6" Room="3" />
+      <Mob2 Robot="SpamShooterMissiles2" Min="3" Max="4" Room="2" />
+      <Mob3 Robot="SpamShooterMissiles2" Min="6" Max="6" Room="1" />
+    </Zone11>
+  </Level5>
+
+  <Level6>
+    <Properties Title="Chapter Six" Subtitle="Botanical Thing-Place" Music="GoodRobot-Place of Growing Things.OGG" ZonesMin="5" ZonesMax="5" />
+    <Textures
+      Foreground="tilesets/atlas_gardens_fore.png"
+      Middle="tilesets/atlas_gardens_back1.png"
+      Background="tilesets/atlas_gardens_back2.png"
+      Sky="cave.png" />
+    <Motif0
+      Foreground="#379"
+      Middle="#377"
+      Background="#386"
+      Sky="#395"
+      Lamp="#379"
+      Light="#B80"
+      Fog="0.7"
+      Machines="BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif1
+      Foreground="#379"
+      Middle="#3B4"
+      Background="#3A5"
+      Lamp="#4D2"
+      Sky="#398"
+      Light="#398"
+      Fog="0.7"
+      Machines="BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif2
+      Foreground="#3EA"
+      Middle="#4E7"
+      Background="#5E5"
+      Lamp="#3EA"
+      Sky="#7E3"
+      Light="#B84"
+      Fog="0.6"
+      Machines="BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif3
+      Foreground="#3B4"
+      Middle="#295"
+      Background="#1BA"
+      Lamp="#BC5"
+      Sky="#19B"
+      Light="#BC4"
+      Fog="0.6"
+        Machines="BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif4
+      Foreground="#A80"
+      Middle="#891"
+      Background="#6B1"
+      Lamp="#A80"
+      Sky="#5D3"
+      Light="#A80"
+      Fog="0.6"
+        Machines="BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+
+    <Zone0 Rooms="3" Patterns="open_porus2 open_debris open_box2" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="Borer1" Min="20" Max="28" />
+      <Mob1 Robot="Borer2" Min="9" Max="15" />
+    </Zone0>
+    <Zone1 Rooms="3" Patterns="tight_snake2 tight_squiggle tight_stairs" Music="GoodRobot-Slow and Unsteady.OGG" Door="DoorRobots" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="Borer3" Min="10" Max="14" />
+      <Mob1 Robot="Borer4" Min="6" Max="10" />
+      <Mob2 Robot="SpamBorer" Min="5" Max="7" />
+    </Zone1>
+    <Zone2 Rooms="3" Patterns="tight_squiggle2 tight_narrow open_tunnel tight_alcove tight_stairs comp_ampule" Music="GoodRobot-Version 2 Will Be Even Better.OGG" Door="DoorForcefield" EndMachine="Upgrade" Forcefield="mobs">
+      <Mob0 Robot="Borer5" Min="8" Max="10" />
+      <Mob1 Robot="Cutter3" Min="5" Max="6" />
+      <Mob2 Robot="Borer2" Min="12" Max="16" />
+      <Mob3 Robot="SpamBorer" Min="4" Max="6" />
+      <Mob4 Robot="Borer4" Min="8" Max="10" />
+    </Zone2>
+    <Zone3 Rooms="4" Patterns="open_debris2 open_x tight_trident open_porus" Door="DoorWallDamage" EndMachine="Shop" Forcefield="none">
+      <Motif
+      Foreground="#F11"
+      Middle="#E73"
+      Background="#E63"
+      Sky="#F54"
+      Lamp="#E93"
+      Light="#E93"
+      Fog="0.3"
+      WallDamage="125"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight FloorElectric1 FloorElectric2 LeftElectric1 LeftElectric2 CeilingElectric1 CeilingElectric2 RightElectric1 RightElectric2">
+      <Textures
+      Foreground="tilesets/atlas_electric_fore.png"
+      Middle="tilesets/atlas_electric_back1.png"
+      Background="tilesets/atlas_electric_back2.png"
+      Sky="cave.png" />
+      </Motif>
+
+      <Mob0 Robot="SpamBorer" Min="4" Max="6" />
+      <Mob1 Robot="Borer3" Min="5" Max="7" />
+      <Mob2 Robot="Borer5" Min="6" Max="8" />
+    </Zone3>
+    <Zone4 Rooms="4" Patterns="open_tetris seg_rooms2 tight_snake tight_trident open_box1" Music="GoodRobot-Slow and Unsteady.OGG" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="Mine1L5" Min="26" Max="34" />
+      <Mob1 Robot="Cutter3" Min="9" Max="12" />
+      <Mob2 Robot="Cutter2" Min="10" Max="15" />
+      <Mob3 Robot="Borer3" Min="6" Max="9" />
+      <Mob4 Robot="Borer4" Min="4" Max="5" />
+    </Zone4>
+    <Zone5 Rooms="4" Patterns="tight_squiggle2 open_porus2 tight_alcove2 comp_zigzag" Music="GoodRobot-Version 2 Will Be Even Better.OGG" Door="DoorShop" EndMachine="Shop" Forcefield="none">
+      <Mob0 Robot="Mine1L5" Min="20" Max="30" />
+      <Mob1 Robot="ChestT3" Min="4" Max="6" />
+      <Mob2 Robot="ChestT3Trap" Min="3" Max="4" />
+      <Mob3 Robot="ChestT4" Min="2" Max="3" />
+      <Mob4 Robot="Cutter3" Min="7" Max="10" />
+      <Mob5 Robot="SpamBorer" Min="6" Max="10" />
+    </Zone5>
+    <Zone6 Rooms="4" Patterns="open_tetris open_debris open_porus tight_cross open_box2" Door="DoorSwarm" EndMachine="Upgrade" Forcefield="none">
+      <Mob0 Robot="Borer2" Min="9" Max="12" />
+      <Mob1 Robot="Borer3" Min="6" Max="9" />
+      <Mob2 Robot="SpamBorer" Min="9" Max="14" />
+      <Mob3 Robot="Cutter3" Min="10" Max="15" />
+    </Zone6>
+    <Zone7 Rooms="7" Patterns="tight_squiggle2 tight_snake2 open_tunnel tight_alcove2 tight_stairs open_grid3" Music="GoodRobot-Version 2 Will Be Even Better.OGG" Door="DoorBigRoom" EndMachine="None" Forcefield="none">
+      <Mob0 Robot="Borer2" Min="8" Max="10" />
+      <Mob1 Robot="Cutter3" Min="6" Max="8" />
+      <Mob2 Robot="Borer5" Min="3" Max="4" />
+      <Mob3 Robot="SpamBorer" Min="5" Max="8" />
+      <Mob4 Robot="Borer4" Min="5" Max="6" Room="4" />
+      <Mob5 Robot="Borer2" Min="8" Max="10" Room="4" />
+      <Mob6 Robot="Cutter3" Min="6" Max="8" Room="4" />
+      <Mob7 Robot="ChestT3" Min="2" Max="3" Room="5" />
+      <Mob8 Robot="Borer3" Min="8" Max="10" Room="5" />
+      <Mob9 Robot="SpamBorer" Min="6" Max="9" Room="5" />
+    </Zone7>
+    <Zone8 Rooms="4" Patterns="tight_cross tight_trident seg_rooms1 tight_alcove2" Music="GoodRobot-Slow and Unsteady.OGG" Door="DoorMiniboss" EndMachine="Upgrade" Forcefield="boss">
+	  <Motif
+      Foreground="#552"
+      Middle="#332"
+      Background="#141"
+      Lamp="#f32"
+      Sky="#330"
+      Light="#450"
+      Fog="0.9"
+      Blind="1"
+      Machines="BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+      <Mob0 Robot="BorerMiniboss" Min="1" Max="1" Room="2" />
+      <Mob1 Robot="SpamBorer" Min="4" Max="5" />
+      <Mob2 Robot="Borer3" Min="4" Max="6" />
+      <Mob3 Robot="Borer4" Min="3" Max="5" />
+    </Zone8>
+    <Zone9 Rooms="3" Patterns="tight_cross narrow tight_trident narrow open_donut2" Music="GoodRobot-Battery Low.OGG" Door="DoorDarkroom" EndMachine="Shop" Forcefield="none">
+      <Motif
+      Foreground="#062"
+      Middle="#042"
+      Background="#141"
+      Lamp="#3FA"
+      Sky="#140"
+      Light="#041"
+      Fog="0.4"
+      Blind="1"
+      Machines="BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+
+      <Mob0 Robot="Borer2" Min="9" Max="10" />
+      <Mob1 Robot="Borer3" Min="10" Max="12" />
+      <Mob2 Robot="Borer4" Min="5" Max="7" />
+      <Mob3 Robot="Cutter3" Min="7" Max="8" />
+    </Zone9>
+    <Zone10 Rooms="4" Patterns="open_arena" Music="GoodRobot-Version 2 Will Be Even Better.OGG" Door="DoorBoss" EndMachine="Upgrade" Forcefield="boss">
+      <Mob0 Robot="BossL5" Min="1" Max="1" Room="1" />
+      <Mob1 Robot="Borer5" Min="2" Max="3" Room="2" />
+      <Mob2 Robot="Borer2" Min="4" Max="6" Room="1" />
+      <Mob3 Robot="Borer3" Min="5" Max="8" Room="2" />
+      <Mob4 Robot="SpamBorer" Min="3" Max="5" Room="2" />
+      <Mob5 Robot="SpamBorer" Min="6" Max="7" Room="2" />
+      <Mob6 Robot="Borer3" Min="5" Max="8" Room="2" />
+    </Zone10>
+  </Level6>
+
+  <Level7>
+    <Properties Title="Chapter Seven" Subtitle="The Showdown" Music="GoodRobot-Where Do Robots Go When They Die.OGG" ZonesMin="5" ZonesMax="5" />
+    <Textures
+      Foreground="tilesets/atlas_electric_fore.png"
+      Middle="tilesets/atlas_electric_back1.png"
+      Background="tilesets/atlas_electric_back2.png"
+      Sky="cave.png" />
+  <Motif0
+    Foreground="#C8A"
+    Middle="#839"
+    Background="#63A"
+    Lamp="#EA2"
+    Sky="#66B"
+    Light="#7BF"
+    Fog="0.6"
+    WallDamage="125"
+    Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight FloorElectric1 FloorElectric2 LeftElectric1 LeftElectric2 CeilingElectric1 CeilingElectric2 RightElectric1 RightElectric2" />
+  <Motif1
+    Foreground="#E37"
+    Middle="#B26"
+    Background="#827"
+    Lamp="#D32"
+    Sky="#626"
+    Light="#526"
+    Fog="0.6"
+    WallDamage="125"
+    Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight FloorElectric1 FloorElectric2 LeftElectric1 LeftElectric2 CeilingElectric1 CeilingElectric2 RightElectric1 RightElectric2" />
+  <Motif2
+    Foreground="#E39"
+    Middle="#B2A"
+    Background="#829"
+    Lamp="#03D"
+    Sky="#426"
+    Light="#02B"
+    Fog="0.6"
+    WallDamage="125"
+    Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight FloorElectric1 FloorElectric2 LeftElectric1 LeftElectric2 CeilingElectric1 CeilingElectric2 RightElectric1 RightElectric2" />
+  <Motif3
+    Foreground="#BDB"
+    Middle="#6AC"
+    Background="#57D"
+    Lamp="#9DB"
+    Sky="#35F"
+    Light="#D63"
+    Fog="0.6"
+    WallDamage="125"
+    Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight FloorElectric1 FloorElectric2 LeftElectric1 LeftElectric2 CeilingElectric1 CeilingElectric2 RightElectric1 RightElectric2" />
+  <Motif4
+    Foreground="#A08"
+    Middle="#94A"
+    Background="#A7A"
+    Lamp="#A03"
+    Sky="#B8A"
+    Light="#502"
+    Fog="0.6"
+    WallDamage="125"
+    Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight FloorElectric1 FloorElectric2 LeftElectric1 LeftElectric2 CeilingElectric1 CeilingElectric2 RightElectric1 RightElectric2" />
+
+
+    <Zone0 Rooms="5" Patterns="open_arena open_tunnel2" Music="GoodRobot-TitleScreen.OGG" Door="DoorFakeBoss0" EndMachine="Upgrade" Forcefield="boss">
+      <Mob0 Robot="ShooterBadass" Min="6" Max="10" Room="1" />
+      <Mob1 Robot="SpamShooter1L6" Min="10" Max="14" Source="Machine" Room="1" />
+	  <Mob2 Robot="SpamShooter1L6" Min="16" Max="20" />
+      <Mob3 Robot="SpamShooter1L6" Min="6" Max="9" Source="Machine" Room="3" />
+      <Mob4 Robot="BossL0vL6" Min="1" Max="1" Room="3" />
+    </Zone0>
+    <Zone1 Rooms="5" Patterns="open_arena" Music="GoodRobot-Programmed to Dance.OGG" Door="DoorFakeBoss1" EndMachine="Upgrade" Forcefield="boss">
+      <Mob0 Robot="SpiderBadass" Min="6" Max="8" Room="1" />
+      <Mob1 Robot="SpiderFireL6" Min="10" Max="14" Room="1" />
+      <Mob2 Robot="SpamShooter1L6" Min="8" Max="10" Source="Machine" Room="3" />
+	  <Mob3 Robot="GrubBadass" Min="3" Max="5" Room="1" />
+      <Mob4 Robot="BossL1vL6" Min="1" Max="1" Room="3" />
+    </Zone1>
+    <Zone2 Rooms="5" Patterns="open arena" Music="GoodRobot-TitleScreen.OGG" Door="DoorFakeBoss2" EndMachine="Shop" Forcefield="boss">
+      <Mob0 Robot="SplitterShooterBadass" Min="5" Max="6" Room="1" />
+      <Mob1 Robot="SpamShooter1L6" Min="10" Max="14" Room="1" Source="Machine" />
+      <Mob2 Robot="SpamShooter1L6" Min="8" Max="10" Room="3" Source="Machine" />
+      <Mob3 Robot="BossL2vL6" Min="1" Max="1" Room="3" />
+    </Zone2>
+    <Zone3 Rooms="5" Patterns="open_arena open_tunnel2" Door="DoorFakeBoss3" EndMachine="Upgrade" Forcefield="boss">
+      <Mob0 Robot="MineLayer2" Min="6" Max="9" Room="1" />
+	  <Mob1 Robot="WallTurret4" Min="4" Max="6" Room="3" />
+	  <Mob2 Robot="ShurikenShooter3L6" Min="5" Max="6" Room="1" />
+      <Mob3 Robot="SpamShooter1L6" Min="6" Max="8" Source="Machine" Room="1" />
+      <Mob4 Robot="SpamShooter1L6" Min="8" Max="11" Source="Machine" Room="3" />
+      <Mob5 Robot="BossL3vL6" Min="1" Max="1" Room="3" />
+    </Zone3>
+    <Zone4 Rooms="5" Patterns="open_arena" Music="GoodRobot-Programmed to Dance.OGG" Door="DoorFakeBoss4" EndMachine="Shop" Forcefield="boss">
+      <Motif
+      Foreground="#E93"
+      Middle="#E73"
+      Background="#E63"
+      Sky="#F54"
+      Lamp="#E93"
+      Light="#E93"
+      Fog="0.3"
+      WallDamage="125"
+      Blind="0"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight FloorElectric1 FloorElectric2 LeftElectric1 LeftElectric2 CeilingElectric1 CeilingElectric2 RightElectric1 RightElectric2" />
+
+      <Mob0 Robot="BossL4EggvL6" Min="1" Max="1" Room="3" />
+      <Mob1 Robot="SquidBadass" Min="4" Max="8" Room="1" />
+      <Mob2 Robot="SquidBadass" Min="4" Max="8" Room="2" />
+      <Mob3 Robot="SpamShooter1L6" Min="10" Max="14" Room="1" Source="Machine" />
+    </Zone4>
+    <Zone5 Rooms="5" Patterns="open_arena open_tunnel2" Music="GoodRobot-TitleScreen.OGG" Door="DoorFakeBoss5" EndMachine="Upgrade" Forcefield="boss">
+      <Mob0 Robot="BorerBadass" Min="4" Max="6" Room="1" />
+      <Mob1 Robot="SpamShooter1L6" Min="10" Max="14" Room="1" Source="Machine" />
+	  <Mob2 Robot="Cutter4" Min="8" Max="12" Room="1" />
+      <Mob3 Robot="BossL5vL6" Min="1" Max="1" Room="3" />
+    </Zone5>
+    <Zone6 Rooms="5" Patterns="open_arena" Music="GoodRobot-Where Do Robots Go When They Die.OGG" Door="DoorBoss" EndMachine="Shop" Forcefield="boss">
+      <Mob0 Robot="BossL6" Min="1" Max="1" Room="3" />
+    </Zone6>
+  </Level7>
+
+  <Level8>
+    <Properties Title="Chapter Eight" Subtitle="Placeholder Levels" Music="GoodRobot-I Reboot.OGG" Fog="0.3" />
+    <Textures
+      Foreground="tilesets/atlas_underwater_fore.png"
+      Middle="tilesets/atlas_underwater_back1.png"
+      Background="tilesets/atlas_underwater_back2.png"
+      Sky="cave.png" />
+    <Motif0
+      Foreground="#59E"
+      Middle="#57B"
+      Background="#66A"
+      Lamp="#59E"
+      Sky="#758"
+      Light="#59E"
+      Fog="0.8"
+        Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight Shop" />
+    <Motif1
+      Foreground="#573"
+      Middle="#772"
+      Background="#971"
+      Lamp="#573"
+      Sky="#C71"
+      Light="#048"
+      Fog="0.8"
+        Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight Shop" />
+    <Motif2
+      Foreground="#51C"
+      Middle="#55C"
+      Background="#58D"
+      Lamp="#51C"
+      Sky="#5DE"
+      Light="#5DE"
+      Fog="0.6"
+        Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight Shop" />
+    <Zone0 Rooms="13" Patterns="arena" Door="DoorRobots" Forcefield="mobs">
+      <Mob0 Robot="Gen2" Min="121" Max="131" Source="Machine" />
+    </Zone0>
+    <Zone1 Rooms="7" Patterns="open_porus2 open_donut open_tunnel" Door="DoorRobots">
+      <Mob0 Robot="Gen3" Min="1" Max="6"  Source="Machine" />
+      <Mob1 Robot="Gen2" Min="1" Max="2" />
+    </Zone1>
+  </Level8>
+
+  <Level9>
+    <Properties Title="Chapter Two" Subtitle="Neo-Jaipur" Music="GoodRobot-Battery Low.OGG" Fog="0.3" ZonesMin="4" ZonesMax="6" />
+    <Textures
+      Foreground="tilesets/atlas_city_fore.png"
+      Middle="tilesets/atlas_city_back1.png"
+      Background="tilesets/atlas_city_back2.png"
+      Sky="cave.png" />
+    <Motif0
+      Foreground="#A24"
+      Middle="#B55"
+      Background="#C76"
+      Lamp="#A24"
+      Sky="#EB8"
+      Light="#EB8"
+      Fog="0.6"
+      Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif1
+      Foreground="#E57"
+      Middle="#D57"
+      Background="#C58"
+      Lamp="#E57"
+      Sky="#C69"
+      Light="#CA3"
+      Fog="0.6"
+        Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif2
+      Foreground="#913"
+      Middle="#A34"
+      Background="#C65"
+      Lamp="#913"
+      Sky="#E97"
+      Light="#E97"
+      Fog="0.6"
+        Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif3
+      Foreground="#62C"
+      Middle="#84A"
+      Background="#A57"
+      Lamp="#52C"
+      Sky="#E85"
+      Light="#E85"
+      Fog="0.6"
+        Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+    <Motif4
+      Foreground="#DC5"
+      Middle="#D95"
+      Background="#D75"
+      Lamp="#DC5"
+      Sky="#D56"
+      Light="#C57"
+      Fog="0.6"
+        Machines="RobotFactoryFloor RobotFactoryCeiling RobotFactoryLeft RobotFactoryRight BlankFloor BlankCeiling BlankLeft BlankRight BlankFloor BlankCeiling BlankLeft BlankRight" />
+
+    <Zone0 Rooms="5" Patterns="open_tutorial open_x open_tetris seg_rooms2" Door="DoorRobots" EndMachine="Shop">
+      <Mob0 Robot="Shooter1Tutorial" Min="1" Max="1" Room="2" />
+      <Mob1 Robot="Shooter2Tutorial" Min="1" Max="1" Room="2" />
+      <Mob2 Robot="Shooter1" Min="3" Max="5" Room="2" />
+
+      <Mob3 Robot="Shooter2" Min="1" Max="3" Room="2" />
+      <Mob4 Robot="Shooter2" Min="2" Max="3" Room="2" Source="Machine" />
+      <Mob5 Robot="Shooter1" Min="5" Max="7" Room="2" />
+      <Mob6 Robot="Shooter1" Min="5" Max="7" Room="2" Source="Machine" />
+      <Mob7 Robot="Shooter2" Min="20" Max="20" Room="2" />
+      <Mob8 Robot="Shooter3" Min="20" Max="20" Room="2" />
+      <Mob9 Robot="WallTurret1" Min="20" Max="20" Room="2" />
+    </Zone0>
+  </Level9>
+
+</levels>

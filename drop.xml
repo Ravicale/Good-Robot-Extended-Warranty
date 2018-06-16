@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drops>
+  <drop name="stuff">
+    <item name="borer1" chance="1" count="1"/>
+    <item name="coins" chance="1" count="5"/>
+    <item name="playerion" chance="1"/>
+    <item name="WeaponsStart" chance="1"/>
+  </drop>
+  <drop name="TestLoot">
+    <item name="borer2" chance="2" count="1"/>
+    <item name="coins" chance="1" count="100"/>
+    <item name="WeaponsStart" chance="1"/>
+  </drop>
+  <drop name="nothing">
+  </drop>
+
+  <!--Loot dropped by bots-->
+
+  <drop name="t1_primary">
+    <item name="coins" chance="1" count="8"/>
+    <item name="WeaponsT1Primary" chance="1"/>
+	<item name="Healyboi" chance="8" count="1"/>
+  </drop>
+  <drop name="t1_secondary">
+    <item name="coins" chance="1" count="8"/>
+    <item name="WeaponsT1Secondary" chance="1"/>
+	<item name="Healyboi" chance="8" count="1"/>
+  </drop>
+
+  <drop name="l3_sawblade">
+    <item name="coins" chance="3" count="15"/>
+    <item name="WeaponsSawblade" chance="35"/>
+	<item name="Healyboi" chance="8" count="1"/>
+  </drop>
+
+  <drop name="l0_common">
+    <item name="coins" chance="2" count="5"/>
+    <item name="WeaponsT1" chance="60"/>
+	<item name="Healyboi" chance="10" count="1"/>
+  </drop>
+  <drop name="l1_common">
+    <item name="coins" chance="2" count="7"/>
+    <item name="WeaponsT1T2" chance="70"/>
+	<item name="Healyboi" chance="10" count="1"/>
+  </drop>
+  <drop name="l2_common">
+    <item name="coins" chance="2" count="10"/>
+    <item name="WeaponsT2" chance="150"/>
+	<item name="Healyboi" chance="10" count="1"/>
+  </drop>
+  <drop name="l2b_common">
+    <item name="coins" chance="2" count="15"/>
+    <item name="WeaponsT2T3" chance="100"/>
+	<item name="Healyboi" chance="10" count="1"/>
+  </drop>
+  <drop name="l3_common">
+    <item name="coins" chance="3" count="20"/>
+    <item name="WeaponsT3" chance="150"/>
+	<item name="Healyboi" chance="10" count="1"/>
+  </drop>
+  <drop name="l4_common">
+    <item name="coins" chance="3" count="25"/>
+    <item name="WeaponsT3T4" chance="100"/>
+	<item name="Healyboi" chance="10" count="1"/>	
+  </drop>
+  <drop name="l5_common">
+    <item name="coins" chance="4" count="20"/>
+    <item name="WeaponsT4" chance="150"/>
+	<item name="BigHealyboi" chance="10" count="1"/>
+  </drop>
+  <drop name="l6_common">
+    <item name="coins" chance="4" count="60"/>
+    <item name="WeaponsT4" chance="140"/>
+	<item name="BigHealyboi" chance="10" count="1"/>
+  </drop>
+
+  <drop name="l0_miniboss_loot">
+    <item name="coins" chance="2" count="200"/>
+    <item name="coins" chance="4" count="400"/>
+    <item name="WeaponsT1" chance="2"/>
+	<item name="BossHealyboi" chance="10" count="1"/>
+  </drop>
+  <drop name="l1_miniboss_loot">
+    <item name="coins" chance="2" count="300"/>
+    <item name="coins" chance="4" count="600"/>
+    <item name="WeaponsT2" chance="2"/>
+	<item name="BossHealyboi" chance="10" count="1"/>
+  </drop>
+  <drop name="l2_miniboss_loot">
+    <item name="coins" chance="2" count="350"/>
+    <item name="coins" chance="4" count="700"/>
+    <item name="WeaponsT2" chance="2"/>
+	<item name="BossHealyboi" chance="10" count="1"/>
+	</drop>
+  <drop name="l2b_miniboss_loot">
+    <item name="coins" chance="2" count="400"/>
+    <item name="coins" chance="4" count="800"/>
+    <item name="WeaponsT3" chance="2"/>
+	<item name="BossHealyboi" chance="9" count="1"/>
+	</drop>
+  <drop name="l3_miniboss_loot">
+    <item name="coins" chance="2" count="150"/>
+    <item name="coins" chance="4" count="300"/>
+    <item name="WeaponsT3" chance="2"/>
+	<item name="BossHealyboi" chance="9" count="1"/>
+	</drop>
+  <drop name="l4_miniboss_loot">
+    <item name="coins" chance="2" count="250"/>
+    <item name="coins" chance="4" count="500"/>
+    <item name="WeaponsT3T4" chance="2"/>
+	<item name="BossHealyboi" chance="8" count="1"/>
+	</drop>
+  <drop name="l5_miniboss_loot">
+    <item name="coins" chance="2" count="325"/>
+    <item name="coins" chance="4" count="650"/>
+    <item name="WeaponsT4" chance="2"/>
+	<item name="BossHealyboi" chance="8" count="1"/>
+  </drop>
+  <drop name="l6_miniboss_loot">
+    <item name="coins" chance="2" count="400"/>
+    <item name="coins" chance="4" count="800"/>
+    <item name="WeaponsT4" chance="8"/>
+	<item name="BossHealyboi" chance="1" count="1"/>
+  </drop>
+
+  <drop name="l0_boss_loot">
+    <item name="WeaponsT2" chance="1"/>
+	<item name="BossHealyboi" chance="1" count="1"/>
+  </drop>
+  <drop name="l1_boss_loot">
+    <item name="WeaponsT2" chance="1"/>
+	<item name="BossHealyboi" chance="1" count="1"/>
+  </drop>
+  <drop name="l2_boss_loot">
+    <item name="WeaponsT3" chance="1"/>
+	<item name="BossHealyboi" chance="1" count="1"/>
+  </drop>
+  <drop name="l2b_boss_loot">
+    <item name="WeaponsT3" chance="1"/>
+	<item name="BossHealyboi" chance="1" count="1"/>
+  </drop>
+  <drop name="l3_boss_loot">
+    <item name="WeaponsT4Secondary" chance="1"/>
+	<item name="BossHealyboi" chance="1" count="1"/>
+  </drop>
+  <drop name="l4_boss_loot">
+    <item name="WeaponsT4Primary" chance="1"/>
+	<item name="BossHealyboi" chance="1" count="1"/>
+  </drop>
+  <drop name="l5_boss_loot">
+    <item name="WeaponsT4" chance="1"/>
+	<item name="BossHealyboi" chance="1" count="2"/>
+    <item name="SpamBorer" chance="1" count="5" />
+    <item name="Borer2" chance="1" count="2" />
+  </drop>
+  <drop name="l6_boss_loot">
+    <!--<item name="WeaponsT4" chance="1"/>-->
+  </drop>
+
+  <!--Loot dropped by chests-->
+
+  <drop name="t1_chest_common">
+    <item name="coins" chance="1" count="10"/>
+    <item name="coins" chance="4" count="40"/>
+    <item name="coins" chance="20" count="200"/>
+    <item name="coins" chance="100" count="1000"/>
+	<item name="WeaponsT1" chance="50"/>
+	<item name="WeaponsT2" chance="200"/>
+  </drop>
+
+  <drop name="t2_chest_common">
+    <item name="coins" chance="1" count="15"/>
+    <item name="coins" chance="4" count="60"/>
+    <item name="coins" chance="20" count="300"/>
+    <item name="coins" chance="100" count="1500"/>
+    <item name="WeaponsT2" chance="50"/>
+	<item name="WeaponsT3" chance="200"/>
+  </drop>
+
+  <drop name="t3_chest_common">
+    <item name="coins" chance="1" count="30"/>
+    <item name="coins" chance="4" count="120"/>
+    <item name="coins" chance="20" count="600"/>
+    <item name="coins" chance="100" count="3000"/>
+    <item name="WeaponsT3" chance="50"/>
+    <item name="WeaponsT4Secondary" chance="200"/>
+  </drop>
+
+  <drop name="t4_chest_common">
+    <item name="coins" chance="1" count="50"/>
+    <item name="coins" chance="4" count="150"/>
+    <item name="coins" chance="20" count="1000"/>
+    <item name="coins" chance="100" count="5000"/>
+    <item name="WeaponsT4" chance="40"/>
+  </drop>
+
+  <drop name="t1_chest_trap">
+    <item name="Shooter3" chance="8" count="1"/>
+    <item name="SpamShooter1" chance="24" count="2"/>
+    <item name="SpamShooter1" chance="12" count="1"/>
+    <item name="Shooter1" chance="32" count="8"/>
+    <item name="Shooter1" chance="1" count="1"/>
+  </drop>
+
+  <drop name="t2_chest_trap">
+    <item name="Spawner1" chance="8" count="1"/>
+    <item name="SpamShooter1L2B" chance="24" count="4"/>
+    <item name="MineLayer1" chance="12" count="1"/>
+    <item name="Spawner2Minion" chance="32" count="12"/>
+    <item name="SpamShooter1L2B" chance="1" count="1"/>
+  </drop>
+
+  <drop name="t3_chest_trap">
+    <item name="Spawner2" chance="8" count="2"/>
+    <item name="Squid3" chance="24" count="2"/>
+    <item name="Squid4" chance="12" count="1"/>
+    <item name="SpamShooter1L3" chance="32" count="8"/>
+    <item name="WallTurret1L4" chance="1" count="1"/>
+  </drop>
+
+  <drop name="t4_chest_trap">
+    <item name="ShooterBadass" chance="8" count="1"/>
+    <item name="Hive3Minion" chance="3" count="5"/>
+    <item name="Shooter4L5" chance="3" count="1"/>
+    <item name="SpamShooter1L6" chance="3" count="2"/>
+    <item name="BounceMissileShooter1" chance="1" count="3"/>
+  </drop>
+
+  <drop name="chest_finalboss">
+    <item name="coin" chance="1" count="17500"/>
+    <item name="SpamShooter1" chance="3" count="2"/>
+    <item name="BigSaw1" chance="3" count="1"/>
+  </drop>
+
+  <!--Robots spawned on death-->
+
+  <drop name="l3_mine">
+    <item name="MiniMine1" chance="8"/>
+  </drop>
+  <drop name="l4_boss_egg">
+    <item name="BossL4Main" chance="1" count="1"/>
+    <item name="BossL4Sub1" chance="1" count="1"/>
+    <item name="BossL4Sub2" chance="1" count="1"/>
+    <item name="BossL4Sub4" chance="1" count="4"/>
+  </drop>
+  <drop name="l4_boss_egg_final">
+    <item name="BossL4vL6" chance="1" count="1"/>
+    <item name="BossL4Sub1" chance="1" count="1"/>
+    <item name="BossL4Sub2" chance="1" count="1"/>
+    <item name="BossL4Sub3" chance="1" count="1"/>
+    <item name="BossL4Sub4" chance="1" count="5"/>
+  </drop>
+  <drop name="l5_boss_v1_clone">
+    <item name="BossL5Form2" chance="1" count="1"/>
+  </drop>
+  <drop name="l5_boss_v2_clone">
+    <item name="BossL5Form3" chance="1" count="1"/>
+  </drop>
+  <drop name="l6_boss_v1_clone">
+    <item name="BossL6Form2" chance="1" count="1"/>
+	<item name="BossHealyboi" chance="1" count="1"/>
+    <item name="WeaponsT4" chance="1"/>
+  </drop>
+  <drop name="l6_boss_v2_clone">
+    <item name="BossL6Form3" chance="1" count="1"/>
+	<item name="BossHealyboi" chance="1" count="1"/>
+    <item name="WeaponsT4" chance="1"/>
+  </drop>
+
+</drops>

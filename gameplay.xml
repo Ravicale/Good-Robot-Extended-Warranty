@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property>
+  <!--Based on this cost scale, it costs ~55k to upgrade any one tree (without putting any points into other attributes at all
+  This system will encourage players to improve their overall builds as they go along-->
+  <ShieldStrength upgrade_count_factor="0.5">
+    <l0  cost="1500"    val="1000" />
+    <l1  cost="2250"    val="1125" />
+    <l2  cost="2630"    val="1250" />
+    <l3  cost="2830"    val="1375" />
+    <l4  cost="2910"    val="1500" />
+    <l5  cost="2960"    val="1625" />
+    <l6  cost="2980"    val="1750" />
+    <l7  cost="3000"    val="1875" />
+    <l8  cost="3000"    val="2000" />
+  </ShieldStrength>
+
+  <DamageScaling upgrade_count_factor="0.5">
+    <l0  cost="1500"   val="1.0" />
+    <l1  cost="2250"   val="1.125" />
+    <l2  cost="2630"   val="1.25" />
+    <l3  cost="2820"   val="1.375" />
+    <l4  cost="2910"   val="1.5" />
+    <l5  cost="2960"   val="1.625" />
+    <l6  cost="2980"   val="1.75" />
+    <l7  cost="3000"   val="1.875" />
+    <l8  cost="3000"   val="2" />
+  </DamageScaling>
+  
+  <PlayerSpeed scale_factor="0.015f" upgrade_count_factor="0.5">
+    <l0  cost="1250"    val="3.0" />
+    <l1  cost="1880"    val="3.4" />
+    <l2  cost="2190"    val="3.8" />
+    <l3  cost="2350"    val="4.2" />
+    <l4  cost="2500"    val="4.6" />
+  </PlayerSpeed>
+
+  <PlayerRefire upgrade_count_factor="0.5">
+    <l0  cost="1250"    val="25" />
+    <l1  cost="1880"    val="23" />
+    <l2  cost="2190"    val="21" />
+    <l3  cost="2350"    val="19" />
+    <l4  cost="2430"    val="18" />
+    <l5  cost="2470"    val="17" />
+    <l6  cost="2490"    val="16" />
+    <l7  cost="2500"    val="15" />
+    <l8  cost="2500"    val="14" />
+  </PlayerRefire>
+
+  <!-- Uses shield cost table, devs pls fix-->
+  <VisionRadius upgrade_count_factor="0.5">
+    <l0  cost="1"    val="3.8" />
+    <l1  cost="1"    val="4.2" />
+    <l2  cost="1"    val="4.6" />
+    <l3  cost="1"   val="5" />
+    <l4  cost="1"   val="5.4" />
+  </VisionRadius>
+
+
+  <!--
+  val="-1" -> immune to damage
+  val="0" -> can't be hit with bullets
+  -->
+  <RobotHP>
+    <hp id="weenie" val="1" />
+    <hp id="tons" val="120" />
+
+    <hp id="chest_default" val="1" />
+	<hp id="health_default" val="5" />
+    <hp id="chest_boss" val="2000" />
+    <hp id="minion" val="1" />
+    <hp id="l0_weak" val="40" />
+    <hp id="l0_default" val="80" />
+    <hp id="l0_moderate" val="100" />
+	<hp id="l0_strong" val="180" />
+    <hp id="l0_miniboss" val="1750" />
+    <hp id="l0_boss" val="4000" />
+	<hp id="l1_mook" val="45" />
+    <hp id="l1_weak" val="90" />
+    <hp id="l1_default" val="112" />
+    <hp id="l1_moderate" val="200" />
+    <hp id="l1_strong" val="270" />
+    <hp id="l1_miniboss" val="3000" />
+    <hp id="l1_boss" val="7500" />
+    <hp id="l2_minion" val="45" />
+    <hp id="l2_minion_strong" val="75" />
+    <hp id="l2_weak" val="112" />
+    <hp id="l2_default" val="224" />
+    <hp id="l2_moderate" val="300" />
+    <hp id="l2_strong" val="360" />
+    <hp id="l2_miniboss" val="4000" />
+    <hp id="l2_boss" val="9500" />
+    <hp id="l2_grubboss" val="3250" />
+    <hp id="l2b_minion" val="60" />
+    <hp id="l2b_minion_strong" val="112" />
+    <hp id="l2b_weak" val="224" />
+    <hp id="l2b_default" val="270" />
+    <hp id="l2b_moderate" val="312" />
+    <hp id="l2b_strong" val="450" />
+    <hp id="l2b_miniboss" val="5000" />
+    <hp id="l2b_boss" val="11500" />
+    <hp id="l3_mine" val="120" />
+    <hp id="l3_weak" val="224" />
+    <hp id="l3_default" val="336" />
+    <hp id="l3_moderate" val="450" />
+    <hp id="l3_strong" val="540" />
+    <hp id="l3_miniboss" val="6500" />
+    <hp id="l3_bossturret" val="800" />
+    <hp id="l3_boss" val="18000" />
+    <hp id="l4_mine" val="120" />
+    <hp id="l4_weak" val="224" />
+    <hp id="l4_default" val="247" />
+    <hp id="l4_moderate" val="540" />
+    <hp id="l4_strong" val="630" />
+    <hp id="l4_miniboss" val="5500" />
+    <hp id="l4_boss" val="11000" />
+    <hp id="l4_boss_sub" val="5500" />
+	<hp id="l4_boss_sub2" val="810" />
+    <hp id="l4_boss_init" val="50" />
+    <hp id="l5_mine" val="240" />
+    <hp id="l5_weak" val="270" />
+    <hp id="l5_default" val="336" />
+    <hp id="l5_moderate" val="540" />
+    <hp id="l5_strong" val="810" />
+    <hp id="l5_miniboss" val="10000" />
+    <hp id="l5_boss_v1" val="6000" />
+    <hp id="l5_boss_v2" val="6000" />
+    <hp id="l5_boss_v3" val="6000" />
+    <hp id="l5_boss_v4" val="4000" />
+    <hp id="l6_weak" val="270" />
+    <hp id="l6_default" val="450" />
+    <hp id="l6_moderate" val="810" />
+    <hp id="l6_strong" val="1250" />
+	<hp id="l6_boss_r" val="14000" />
+    <hp id="l6_boss_v1" val="25000" />
+    <hp id="l6_boss_v2" val="10000" />
+    <hp id="l6_boss_v3" val="10000" />
+
+    <hp id="immune"   val="-1" />
+    <!--Tried "-1" but it doesn't seem to work on robots? Using nearlyimmune for now.-->
+    <hp id="no_hit"   val="0" />
+    <hp id="nearlyimmune"   val="500000" />
+  </RobotHP>
+
+  <RobotMoney>
+    <m id="minion_exp" val="0" />
+    <m id="chest_exp" val="0" />
+    <m id="mine_exp" val="0" />
+    <m id="l0_weak_exp" val="55" />
+    <m id="l0_default_exp" val="70" />
+    <m id="l0_moderate_exp" val="100" />
+    <m id="l0_strong_exp" val="120" />
+    <m id="l0_miniboss_exp" val="1500" />
+    <m id="l0_boss_exp" val="2250" />
+	<m id="l1_weak_exp" val="60" />
+    <m id="l1_default_exp" val="85" />
+    <m id="l1_moderate_exp" val="120" />
+    <m id="l1_strong_exp" val="150" />
+    <m id="l1_miniboss_exp" val="2100" />
+    <m id="l1_boss_exp" val="4500" />
+    <m id="l2_weak_exp" val="80" />
+    <m id="l2_default_exp" val="120" />
+    <m id="l2_moderate_exp" val="150" />
+    <m id="l2_strong_exp" val="180" />
+    <m id="l2_miniboss_exp" val="2800" />
+    <m id="l2_boss_exp" val="6750" />
+    <m id="l2b_weak_exp" val="85" />
+    <m id="l2b_default_exp" val="130" />
+    <m id="l2b_moderate_exp" val="165" />
+    <m id="l2b_strong_exp" val="200" />
+    <m id="l2b_miniboss_exp" val="3600" />
+    <m id="l2b_boss_exp" val="9000" />
+    <m id="l3_weak_exp" val="90" />
+    <m id="l3_default_exp" val="145" />
+    <m id="l3_moderate_exp" val="190" />
+    <m id="l3_strong_exp" val="225" />
+    <m id="l3_miniboss_exp" val="4500" />
+    <m id="l3_boss_exp" val="11250" />
+    <m id="l4_weak_exp" val="105" />
+    <m id="l4_default_exp" val="160" />
+    <m id="l4_moderate_exp" val="210" />
+    <m id="l4_strong_exp" val="250" />
+    <m id="l4_miniboss_exp" val="7000" />
+    <m id="l4_boss_exp" val="13500" />
+    <m id="l4_boss_sub_exp" val="6000" />
+    <m id="l5_weak_exp" val="125" />
+    <m id="l5_default_exp" val="180" />
+    <m id="l5_moderate_exp" val="240" />
+    <m id="l5_strong_exp" val="285" />
+    <m id="l5_miniboss_exp" val="4500" />
+    <m id="l5_boss_exp" val="2625" />
+    <m id="l6_weak_exp" val="85" />
+    <m id="l6_default_exp" val="110" />
+    <m id="l6_moderate_exp" val="140" />
+    <m id="l6_strong_exp" val="170" />
+    <m id="l6_boss_rush_exp" val="2800" />
+    <m id="l6_boss_exp" val="1000000" />
+  </RobotMoney>
+
+  <RobotScore>
+    <pts id="minion_score" val="0" />
+    <pts id="chest_score" val="10" />
+    <pts id="mine_score" val="10" />
+    <pts id="l0_weak_score" val="10" />
+    <pts id="l0_default_score" val="20" />
+    <pts id="l0_moderate_score" val="30" />
+    <pts id="l0_strong_score" val="40" />
+    <pts id="l0_miniboss_score" val="125" />
+    <pts id="l0_boss_score" val="200" />
+    <pts id="l1_weak_score" val="15" />
+    <pts id="l1_default_score" val="25" />
+    <pts id="l1_moderate_score" val="35" />
+    <pts id="l1_strong_score" val="50" />
+    <pts id="l1_miniboss_score" val="150" />
+    <pts id="l1_boss_score" val="250" />
+    <pts id="l2_weak_score" val="25" />
+    <pts id="l2_default_score" val="40" />
+    <pts id="l2_moderate_score" val="50" />
+    <pts id="l2_strong_score" val="65" />
+    <pts id="l2_miniboss_score" val="225" />
+    <pts id="l2_boss_score" val="325" />
+    <pts id="l2b_weak_score" val="25" />
+    <pts id="l2b_default_score" val="45" />
+    <pts id="l2b_moderate_score" val="55" />
+    <pts id="l2b_strong_score" val="70" />
+    <pts id="l2b_miniboss_score" val="260" />
+    <pts id="l2b_boss_score" val="380" />
+    <pts id="l2b_boss_sub_score" val="12" />
+    <pts id="l3_weak_score" val="25" />
+    <pts id="l3_default_score" val="50" />
+    <pts id="l3_moderate_score" val="60" />
+    <pts id="l3_strong_score" val="75" />
+    <pts id="l3_miniboss_score" val="300" />
+    <pts id="l3_boss_score" val="450" />
+    <pts id="l3_boss_sub_score" val="10" />
+    <pts id="l4_weak_score" val="30" />
+    <pts id="l4_default_score" val="60" />
+    <pts id="l4_moderate_score" val="75" />
+    <pts id="l4_strong_score" val="90" />
+    <pts id="l4_miniboss_score" val="400" />
+    <pts id="l4_boss_score" val="300" />
+    <pts id="l4_boss_sub_score" val="100" />
+    <pts id="l5_weak_score" val="40" />
+    <pts id="l5_default_score" val="70" />
+    <pts id="l5_moderate_score" val="85" />
+    <pts id="l5_strong_score" val="110" />
+    <pts id="l5_miniboss_score" val="500" />
+    <pts id="l5_boss_score" val="775" />
+    <pts id="l6_weak_score" val="55" />
+    <pts id="l6_default_score" val="70" />
+    <pts id="l6_moderate_score" val="95" />
+    <pts id="l6_strong_score" val="125" />
+    <pts id="l6_boss_rush_score" val="600" />
+    <pts id="l6_boss_score" val="1600" />
+  </RobotScore>
+
+  <!--Cost of warranty = Base + (Count * Times warranty already purchased) + (Power * Number of upgrades purchased by player)-->
+  <warranty base="3000" count="1500" power="200" />
+
+  <!--Cost of repairs  = Base + (Count * Number of times robot has been repaired) + (Power * (1 - Shield percentage value))-->
+  <repair base="1000" count="300" power="0" />
+
+  <!--This is a voluntary flag, set this to false if you want achievements to be disabled. Used for modding.-->
+  <achievements enabled="false" />
+
+  <shop>
+    <level0 list="PlayerPhase PlayerRivet PlayerArgon PlayerSMG PlayerIon PlayerWave PlayerJunkThrower PlayerGrenade PlayerCutter PlayerSpark PlayerRocket PlayerFastMissile PlayerPlasmaCannon PlayerGrenadeL PlayerCrystalCannon PlayerOverheat PlayerThermalVent PlayerScattershot PlayerMagnet" />
+    <level1 list="PlayerPhase PlayerArgon PlayerRivetGun PlayerSMG PlayerIon PlayerWave PlayerJunkThrower PlayerGrenade PlayerCutter PlayerArc PlayerMagnet PlayerRocket PlayerFastMissile PlayerPlasmaCannon PlayerGrenadeL PlayerCrystalCannon PlayerOverheat PlayerThermalVent PlayerScattershot Default PlayerShotgun PlayerFlak PlayerSpiker PlayerBurstBeam PlayerShuriken PlayerXenon PlayerHMG PlayerBeat PlayerBombVolley PlayerBounceMissile PlayerSawblade PlayerSpreadBeam PlayerDoubleRocket PlayerTriMissile PlayerIonPulse PlayerLeech PlayerHoldoutBeam" />
+    <level2 list="PlayerShotgun PlayerFlak PlayerSpiker PlayerBurstBeam PlayerShuriken PlayerXenon PlayerHMG PlayerBeat PlayerArc PlayerBombVolley PlayerBounceMissile PlayerSawblade PlayerSpreadBeam PlayerDoubleRocket PlayerTriMissile PlayerIonPulse PlayerLeech PlayerHoldoutBeam" />
+    <level3 list="PlayerShotgun PlayerFlak PlayerSpiker PlayerBurstBeam PlayerShuriken PlayerXenon PlayerHMG PlayerBombVolley PlayerBounceMissile PlayerSawblade PlayerSpreadBeam PlayerDoubleRocket PlayerTriMissile PlayerIonPulse PlayerElectron PlayerGatlingBeam PlayerPulseBeam PlayerMinigun PlayerSparkGun PlayerParticleLance PlayerSplitBeam PlayerAccel PlayerHeavyBeam PlayerBlunderbuss PlayerMissileCluster PlayerMortar PlayerMIRV PlayerFasterMissile PlayerRicochetMissile PlayerInfernoCannon PlayerNanoSwarm PlayerPlasmaCaster" />
+    <level4 list="PlayerElectron PlayerGatlingBeam PlayerPulseBeam PlayerMinigun PlayerSparkGun PlayerParticleLance PlayerAccel PlayerSplitBeam PlayerHeavyBeam PlayerBlunderbuss PlayerMissileCluster PlayerMortar PlayerMIRV PlayerFasterMissile PlayerRicochetMissile PlayerInfernoCannon PlayerNanoSwarm PlayerPlasmaCaster" />
+    <level5 list="PlayerElectron PlayerGatlingBeam PlayerPulseBeam PlayerMinigun PlayerSparkGun PlayerParticleLance PlayerAccel PlayerSplitBeam PlayerHeavyBeam PlayerBlunderbuss PlayerMissileCluster PlayerMortar PlayerMIRV PlayerFasterMissile PlayerRicochetMissile PlayerInfernoCannon PlayerNanoSwarm PlayerPlasmaCaster PlayerRailgun PlayerHeavyBeamReflect PlayerPrismBeam PlayerMissileRain PlayerAura PlayerNuke PlayerDisintegrator PlayerVolley" />
+    <level6 list="PlayerSustainBeam PlayerDualGatlingBeam PlayerDeathRay PlayerMiniCannon PlayerRotaryCannon PlayerHeatedFlak PlayerRepeatingCannon PlayerRiotShotgun PlayerHeatCannon PlayerGrenadeMg PlayerCloud PlayerRailgun PlayerHeavyBeamReflect PlayerPrismBeam PlayerMissileRain PlayerAura PlayerNuke PlayerDisintegrator" />
+    <level7 list="PlayerSustainBeam PlayerDualGatlingBeam PlayerDeathRay PlayerMiniCannon PlayerRotaryCannon PlayerHeatedFlak PlayerRepeatingCannon PlayerRiotShotgun PlayerHeatCannon PlayerGrenadeMg PlayerCloud PlayerRailgun PlayerHeavyBeamReflect PlayerPrismBeam PlayerMissileRain PlayerAura PlayerNuke PlayerDisintegrator" />
+    <level8 list="PlayerSustainBeam PlayerDualGatlingBeam PlayerDeathRay PlayerMiniCannon PlayerRotaryCannon PlayerHeatedFlak PlayerRepeatingCannon PlayerRiotShotgun PlayerHeatCannon PlayerGrenadeMg PlayerCloud PlayerRailgun PlayerHeavyBeamReflect PlayerPrismBeam PlayerMissileRain PlayerAura PlayerNuke PlayerDisintegrator" />
+  </shop>
+</property>
