@@ -3,14 +3,14 @@
   <!--Based on this cost scale, it costs ~55k to upgrade any one tree (without putting any points into other attributes at all
   This system will encourage players to improve their overall builds as they go along-->
   <ShieldStrength upgrade_count_factor="0.5">
-    <l0  cost="1500"    val="1000" />
-    <l1  cost="2250"    val="1125" />
-    <l2  cost="2630"    val="1250" />
-    <l3  cost="2830"    val="1375" />
-    <l4  cost="2910"    val="1500" />
-    <l5  cost="2960"    val="1625" />
-    <l6  cost="2980"    val="1750" />
-    <l7  cost="3000"    val="1875" />
+    <l0  cost="1500"    val="800" />
+    <l1  cost="2250"    val="950" />
+    <l2  cost="2630"    val="1100" />
+    <l3  cost="2830"    val="1250" />
+    <l4  cost="2910"    val="1400" />
+    <l5  cost="2960"    val="1550" />
+    <l6  cost="2980"    val="1700" />
+    <l7  cost="3000"    val="1850" />
     <l8  cost="3000"    val="2000" />
   </ShieldStrength>
 
@@ -35,15 +35,15 @@
   </PlayerSpeed>
 
   <PlayerRefire upgrade_count_factor="0.5">
-    <l0  cost="1250"    val="25" />
-    <l1  cost="1880"    val="23" />
-    <l2  cost="2190"    val="21" />
-    <l3  cost="2350"    val="19" />
-    <l4  cost="2430"    val="18" />
-    <l5  cost="2470"    val="17" />
-    <l6  cost="2490"    val="16" />
-    <l7  cost="2500"    val="15" />
-    <l8  cost="2500"    val="14" />
+    <l0  cost="1500"    val="25" />
+    <l1  cost="2250"    val="23" />
+    <l2  cost="2630"    val="21" />
+    <l3  cost="2820"    val="19" />
+    <l4  cost="2910"    val="17" />
+    <l5  cost="2960"    val="15" />
+    <l6  cost="2980"    val="14" />
+    <l7  cost="3000"    val="13" />
+    <l8  cost="3000"    val="12" />
   </PlayerRefire>
 
   <!-- Uses shield cost table, devs pls fix-->
@@ -257,7 +257,7 @@
   <warranty base="3000" count="1500" power="200" />
 
   <!--Cost of repairs  = Base + (Count * Number of times robot has been repaired) + (Power * (1 - Shield percentage value))-->
-  <repair base="1000" count="300" power="0" />
+  <repair base="1000" count="300" power="100" />
 
   <!--This is a voluntary flag, set this to false if you want achievements to be disabled. Used for modding.-->
   <achievements enabled="false" />
@@ -266,11 +266,11 @@
     <level0 list="PlayerPhase PlayerRivet PlayerArgon PlayerSMG PlayerIon PlayerWave PlayerJunkThrower PlayerGrenade PlayerCutter PlayerSpark PlayerRocket PlayerFastMissile PlayerPlasmaCannon PlayerGrenadeL PlayerCrystalCannon PlayerOverheat PlayerThermalVent PlayerScattershot PlayerMagnet" />
     <level1 list="PlayerPhase PlayerArgon PlayerRivetGun PlayerSMG PlayerIon PlayerWave PlayerJunkThrower PlayerGrenade PlayerCutter PlayerArc PlayerMagnet PlayerRocket PlayerFastMissile PlayerPlasmaCannon PlayerGrenadeL PlayerCrystalCannon PlayerOverheat PlayerThermalVent PlayerScattershot Default PlayerShotgun PlayerFlak PlayerSpiker PlayerBurstBeam PlayerShuriken PlayerXenon PlayerHMG PlayerBeat PlayerBombVolley PlayerBounceMissile PlayerSawblade PlayerSpreadBeam PlayerDoubleRocket PlayerTriMissile PlayerIonPulse PlayerLeech PlayerHoldoutBeam" />
     <level2 list="PlayerShotgun PlayerFlak PlayerSpiker PlayerBurstBeam PlayerShuriken PlayerXenon PlayerHMG PlayerBeat PlayerArc PlayerBombVolley PlayerBounceMissile PlayerSawblade PlayerSpreadBeam PlayerDoubleRocket PlayerTriMissile PlayerIonPulse PlayerLeech PlayerHoldoutBeam" />
-    <level3 list="PlayerShotgun PlayerFlak PlayerSpiker PlayerBurstBeam PlayerShuriken PlayerXenon PlayerHMG PlayerBombVolley PlayerBounceMissile PlayerSawblade PlayerSpreadBeam PlayerDoubleRocket PlayerTriMissile PlayerIonPulse PlayerElectron PlayerGatlingBeam PlayerPulseBeam PlayerMinigun PlayerSparkGun PlayerParticleLance PlayerSplitBeam PlayerAccel PlayerHeavyBeam PlayerBlunderbuss PlayerMissileCluster PlayerMortar PlayerMIRV PlayerFasterMissile PlayerRicochetMissile PlayerInfernoCannon PlayerNanoSwarm PlayerPlasmaCaster" />
-    <level4 list="PlayerElectron PlayerGatlingBeam PlayerPulseBeam PlayerMinigun PlayerSparkGun PlayerParticleLance PlayerAccel PlayerSplitBeam PlayerHeavyBeam PlayerBlunderbuss PlayerMissileCluster PlayerMortar PlayerMIRV PlayerFasterMissile PlayerRicochetMissile PlayerInfernoCannon PlayerNanoSwarm PlayerPlasmaCaster" />
-    <level5 list="PlayerElectron PlayerGatlingBeam PlayerPulseBeam PlayerMinigun PlayerSparkGun PlayerParticleLance PlayerAccel PlayerSplitBeam PlayerHeavyBeam PlayerBlunderbuss PlayerMissileCluster PlayerMortar PlayerMIRV PlayerFasterMissile PlayerRicochetMissile PlayerInfernoCannon PlayerNanoSwarm PlayerPlasmaCaster PlayerRailgun PlayerHeavyBeamReflect PlayerPrismBeam PlayerMissileRain PlayerAura PlayerNuke PlayerDisintegrator PlayerVolley" />
-    <level6 list="PlayerSustainBeam PlayerDualGatlingBeam PlayerDeathRay PlayerMiniCannon PlayerRotaryCannon PlayerHeatedFlak PlayerRepeatingCannon PlayerRiotShotgun PlayerHeatCannon PlayerGrenadeMg PlayerCloud PlayerRailgun PlayerHeavyBeamReflect PlayerPrismBeam PlayerMissileRain PlayerAura PlayerNuke PlayerDisintegrator" />
-    <level7 list="PlayerSustainBeam PlayerDualGatlingBeam PlayerDeathRay PlayerMiniCannon PlayerRotaryCannon PlayerHeatedFlak PlayerRepeatingCannon PlayerRiotShotgun PlayerHeatCannon PlayerGrenadeMg PlayerCloud PlayerRailgun PlayerHeavyBeamReflect PlayerPrismBeam PlayerMissileRain PlayerAura PlayerNuke PlayerDisintegrator" />
-    <level8 list="PlayerSustainBeam PlayerDualGatlingBeam PlayerDeathRay PlayerMiniCannon PlayerRotaryCannon PlayerHeatedFlak PlayerRepeatingCannon PlayerRiotShotgun PlayerHeatCannon PlayerGrenadeMg PlayerCloud PlayerRailgun PlayerHeavyBeamReflect PlayerPrismBeam PlayerMissileRain PlayerAura PlayerNuke PlayerDisintegrator" />
+    <level3 list="PlayerShotgun PlayerFlak PlayerSpiker PlayerBurstBeam PlayerXenon PlayerHMG PlayerBombVolley PlayerBounceMissile PlayerSawblade PlayerSpreadBeam PlayerDoubleRocket PlayerTriMissile PlayerIonPulse PlayerElectron PlayerGatlingBeam PlayerPulseBeam PlayerMinigun PlayerSparkGun PlayerParticleLance PlayerSplitBeam PlayerAccel PlayerHeavyBeam PlayerBlunderbuss PlayerMissileCluster PlayerMortar PlayerMIRV PlayerFasterMissile PlayerInfernoCannon PlayerNanoSwarm PlayerPlasmaCaster PlayerSingularity PlayerShuriken" />
+    <level4 list="PlayerElectron PlayerGatlingBeam PlayerPulseBeam PlayerMinigun PlayerSparkGun PlayerParticleLance PlayerAccel PlayerSplitBeam PlayerHeavyBeam PlayerBlunderbuss PlayerMissileCluster PlayerMortar PlayerMIRV PlayerFasterMissile PlayerInfernoCannon PlayerNanoSwarm PlayerPlasmaCaster PlayerSingularity" />
+    <level5 list="PlayerElectron PlayerGatlingBeam PlayerPulseBeam PlayerMinigun PlayerSparkGun PlayerParticleLance PlayerAccel PlayerSplitBeam PlayerHeavyBeam PlayerBlunderbuss PlayerMissileCluster PlayerMortar PlayerMIRV PlayerFasterMissile PlayerRicochetMissile PlayerInfernoCannon PlayerNanoSwarm PlayerPlasmaCaster PlayerSingularity PlayerRailgun PlayerHeavyBeamReflect PlayerPrismBeam PlayerMissileRain PlayerAura PlayerNuke PlayerDisintegrator PlayerVolley" />
+    <level6 list="PlayerSustainBeam PlayerDualGatlingBeam PlayerDeathRay PlayerMiniCannon PlayerRotaryCannon PlayerHeatedFlak PlayerRepeatingCannon PlayerRiotShotgun PlayerHeatCannon PlayerGrenadeMg PlayerCloud PlayerRailgun PlayerHeavyBeamReflect PlayerPrismBeam PlayerMissileRain PlayerAura PlayerNuke PlayerDisintegrator PlayerRicochetMissile" />
+    <level7 list="PlayerSustainBeam PlayerDualGatlingBeam PlayerDeathRay PlayerMiniCannon PlayerRotaryCannon PlayerHeatedFlak PlayerRepeatingCannon PlayerRiotShotgun PlayerHeatCannon PlayerGrenadeMg PlayerCloud PlayerRailgun PlayerHeavyBeamReflect PlayerPrismBeam PlayerMissileRain PlayerAura PlayerNuke PlayerDisintegrator PlayerRicochetMissile" />
+    <level8 list="PlayerSustainBeam PlayerDualGatlingBeam PlayerDeathRay PlayerMiniCannon PlayerRotaryCannon PlayerHeatedFlak PlayerRepeatingCannon PlayerRiotShotgun PlayerHeatCannon PlayerGrenadeMg PlayerCloud PlayerRailgun PlayerHeavyBeamReflect PlayerPrismBeam PlayerMissileRain PlayerAura PlayerNuke PlayerDisintegrator PlayerRicochetMissile" />
   </shop>
 </property>

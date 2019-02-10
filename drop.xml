@@ -171,8 +171,8 @@
   <drop name="t2_chest_common">
     <item name="coins" chance="1" count="15"/>
     <item name="coins" chance="4" count="60"/>
-    <item name="coins" chance="20" count="300"/>
-    <item name="coins" chance="100" count="1500"/>
+    <item name="coins" chance="20" count="400"/>
+    <item name="coins" chance="100" count="2000"/>
     <item name="WeaponsT2" chance="50"/>
 	<item name="WeaponsT3" chance="200"/>
   </drop>
@@ -180,8 +180,8 @@
   <drop name="t3_chest_common">
     <item name="coins" chance="1" count="30"/>
     <item name="coins" chance="4" count="120"/>
-    <item name="coins" chance="20" count="600"/>
-    <item name="coins" chance="100" count="3000"/>
+    <item name="coins" chance="20" count="800"/>
+    <item name="coins" chance="100" count="4000"/>
     <item name="WeaponsT3" chance="50"/>
     <item name="WeaponsT4Secondary" chance="200"/>
   </drop>
@@ -189,8 +189,8 @@
   <drop name="t4_chest_common">
     <item name="coins" chance="1" count="50"/>
     <item name="coins" chance="4" count="150"/>
-    <item name="coins" chance="20" count="1000"/>
-    <item name="coins" chance="100" count="5000"/>
+    <item name="coins" chance="20" count="1500"/>
+    <item name="coins" chance="100" count="7500"/>
     <item name="WeaponsT4" chance="40"/>
   </drop>
 
@@ -211,19 +211,19 @@
   </drop>
 
   <drop name="t3_chest_trap">
-    <item name="Spawner2" chance="8" count="2"/>
-    <item name="Squid3" chance="24" count="2"/>
-    <item name="Squid4" chance="12" count="1"/>
-    <item name="SpamShooter1L3" chance="32" count="8"/>
-    <item name="WallTurret1L4" chance="1" count="1"/>
+    <item name="Spawner2" chance="4" count="2"/>
+    <item name="Squid3" chance="12" count="2"/>
+    <item name="Squid4" chance="6" count="1"/>
+    <item name="SpamShooter1L3" chance="16" count="10"/>
+    <item name="WallTurret4" chance="1" count="1"/>
   </drop>
 
   <drop name="t4_chest_trap">
-    <item name="ShooterBadass" chance="8" count="1"/>
-    <item name="Hive3Minion" chance="3" count="5"/>
-    <item name="Shooter4L5" chance="3" count="1"/>
-    <item name="SpamShooter1L6" chance="3" count="2"/>
-    <item name="BounceMissileShooter1" chance="1" count="3"/>
+    <item name="ShooterBadass" chance="8" count="2"/>
+    <item name="Hive3Minion" chance="6" count="6"/>
+    <item name="SpamBorer" chance="3" count="2"/>
+    <item name="SquidBadass" chance="4" count="1"/>
+    <item name="SpamShooter1L6" chance="1" count="4"/>
   </drop>
 
   <drop name="chest_finalboss">

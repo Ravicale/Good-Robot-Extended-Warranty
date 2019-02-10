@@ -860,7 +860,7 @@
       <Mob0 Robot="Squid1" Min="10" Max="12" />
       <Mob1 Robot="Squid2" Min="5" Max="8" />
       <Mob2 Robot="Squid3" Min="4" Max="5" />
-      <Mob3 Robot="SpamShooterMissiles2" Min="5" Max="8" Source="Machine" />
+      <Mob3 Robot="SpamShooterMissiles2L5" Min="5" Max="8" Source="Machine" />
     </Zone1>
     <Zone2 Rooms="3" Patterns="open_debris open_tunnel open_shelf open_box2" Music="GoodRobot-Factory Floor.OGG" Door="DoorForcefield" EndMachine="Upgrade" Forcefield="mobs">
       <Mob0 Robot="BigMissileSquid" Min="3" Max="5" />
@@ -876,7 +876,7 @@
       <Mob1 Robot="Squid3" Min="5" Max="6" Source="Machine" />
       <Mob2 Robot="BounceMissileShooter1" Min="4" Max="6" Source="Machine" />
       <Mob3 Robot="BigMissileSquid" Min="5" Max="8" />
-      <Mob4 Robot="SpamShooterMissiles2" Min="4" Max="6" />
+      <Mob4 Robot="SpamShooterMissiles2L5" Min="4" Max="6" />
     </Zone3>
     <Zone4 Rooms="4" Patterns="open_tunnel2 open_grid seg_rooms2 open_donut2" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
       <Mob0 Robot="Squid2" Min="6" Max="9" Source="Machine" />
@@ -900,7 +900,7 @@
       <Mob0 Robot="Squid3" Min="9" Max="10" />
       <Mob1 Robot="FlameShooter1L4" Min="12" Max="14" />
       <Mob2 Robot="Squid4" Min="5" Max="7" />
-      <Mob3 Robot="SpamShooterMissiles2" Min="7" Max="8" Source="Machine"/>
+      <Mob3 Robot="SpamShooterMissiles2L5" Min="7" Max="8" Source="Machine"/>
     </Zone5>
     <Zone6 Rooms="4" Patterns="seg_hourglass2 open_x2 tight_stairs open_tetris open_box1" Music="We Come In Pieces.OGG" Door="DoorShop" EndMachine="Upgrade" Forcefield="none">
       <Mob0 Robot="ChestT3" Min="5" Max="7" />
@@ -935,7 +935,7 @@
     </Zone7>
     <Zone8 Rooms="5" Patterns="comp_zot seg_hourglass2 open_cavern comp_zigzag" Music="GoodRobot-Factory Floor.OGG" Door="DoorRobots" EndMachine="Upgrade" Forcefield="none">
       <Mob0 Robot="BounceMissileShooter1" Min="5" Max="8" Source="Machine" />
-      <Mob1 Robot="SpamShooterMissiles2" Min="7" Max="9" />
+      <Mob1 Robot="SpamShooterMissiles2L5" Min="7" Max="9" />
       <Mob2 Robot="Squid4" Min="4" Max="5" Source="Machine" />
       <Mob3 Robot="Squid2" Min="5" Max="7" />
     </Zone8>
@@ -945,20 +945,20 @@
       <Mob2 Robot="Squid4" Min="2" Max="4" />
       <Mob3 Robot="Squid4" Min="2" Max="4" Source="Machine" />
       <Mob4 Robot="Squid5" Min="2" Max="5" />
-      <Mob5 Robot="SpamShooterMissiles2" Min="2" Max="3" Source="Machine" />
+      <Mob5 Robot="SpamShooterMissiles2L5" Min="2" Max="3" Source="Machine" />
     </Zone9>
     <Zone10 Rooms="5" Patterns="open_debris2" Music="GoodRobot-I Lost My Loose Screw.OGG" Door="DoorMiniboss" EndMachine="Upgrade" Forcefield="boss">
       <Mob0 Robot="SquidMiniboss" Min="1" Max="1" Room="2" />
-      <Mob1 Robot="SpamShooterMissiles2" Min="6" Max="8" />
+      <Mob1 Robot="SpamShooterMissiles2L5" Min="6" Max="8" />
       <Mob2 Robot="BigMissileSquid" Min="5" Max="8" Source="Machine" />
       <Mob3 Robot="BounceMissileShooter1" Min="3" Max="4" Source="Machine" />
       <Mob4 Robot="BounceMissileShooter1" Min="4" Max="5" />
     </Zone10>
     <Zone11 Rooms="5" Patterns="open_arena" Door="DoorBoss" EndMachine="Shop" Forcefield="boss">
       <Mob0 Robot="BossL4Egg" Min="1" Max="1" Room="3" />
-      <Mob1 Robot="SpamShooterMissiles2" Min="5" Max="6" Room="3" />
-      <Mob2 Robot="SpamShooterMissiles2" Min="3" Max="4" Room="2" />
-      <Mob3 Robot="SpamShooterMissiles2" Min="6" Max="6" Room="1" />
+      <Mob1 Robot="SpamShooterMissiles2L5" Min="5" Max="6" Room="3" />
+      <Mob2 Robot="SpamShooterMissiles2L5" Min="3" Max="4" Room="2" />
+      <Mob3 Robot="SpamShooterMissiles2L5" Min="6" Max="6" Room="1" />
     </Zone11>
   </Level5>
 
